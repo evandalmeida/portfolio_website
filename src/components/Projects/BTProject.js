@@ -1,6 +1,6 @@
 import React from 'react';
-import github from '../../assets/github.bounce.pvg.svg';
-import imgURL from '../../assets/bike_tracer_phone_demo.mov';
+import github from '../../assets/icons/github.bounce.pvg.svg';
+import imgURL from '../../assets/demos/bike_tracer_phone_demo.mov';
 
 export const BTProject = () => {
     return (

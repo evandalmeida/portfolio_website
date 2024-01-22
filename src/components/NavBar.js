@@ -8,7 +8,7 @@ function NavBar() {
             <Link to='/'>
                 <div className='logo'>
                     <h1 className='logo'> EVAN D'ALMEIDA</h1>
-                    <img src={headerImg} alt="Header Img" style={{ maxWidth: '70%' }} />
+                    <img src={headerImg} alt="Header Img" style={{ maxWidth: '10%' }} />
                 </div>
              </Link>
 

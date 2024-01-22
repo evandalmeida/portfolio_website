@@ -1,6 +1,6 @@
 import React from 'react';
-import github from '../../assets/github.bounce.pvg.svg';
-import imgURL from '../../assets/HealthHarborMD.gif';
+import github from '../../assets/icons/github.bounce.pvg.svg';
+import imgURL from '../../assets/demos/HealthHarborMD.gif';
 
 export const HHMDProject = () => {
     return (
