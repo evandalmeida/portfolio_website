@@ -1,4 +1,4 @@
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {Router, Routes, Route} from 'react-router-dom';
 
 // COMPONENTS
 import {NavBar} from './components/NavBar';
@@ -11,16 +11,18 @@ import {Contact} from './components/Contact'
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <Router>
       <NavBar/>
+      <div id='main-div'>
           <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="projects" element={<Projects />}/>
-            <Route path="about-me" element={<AboutMe />}/>
-            <Route path="resume" element={<Resume />}/>
-            <Route path="contact" element={<Contact />}/>
+            <Route path="/projects" element={<Projects />}/>
+            <Route path="/about-me" element={<AboutMe />}/>
+            <Route path="/resume" element={<Resume />}/>
+            <Route path="/contact" element={<Contact />}/>
           </Routes>
-      </BrowserRouter>
+      </div>
+      </Router>
     </div>
   );
 }
