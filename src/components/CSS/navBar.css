@@ -1,6 +1,23 @@
-
-#logo {
+#nav-bar {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#nav-bar a {
+    margin: 0 15px; /* Adjust spacing between links */
+    text-decoration: none; /* Optional, for styling */
+    color: black; /* Or any color you prefer */
+    font-size: 100px; /* Optional, for styling */
+}
+
+/* Optional: Add a hover effect for links */
+#nav-bar a:hover {
+    color: #0275d8; /* Or any hover color you prefer */
 }

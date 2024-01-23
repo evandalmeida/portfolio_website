@@ -1,7 +1,19 @@
+#home-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #home-div h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     font-size: 90px;
+    margin: 50px;
+    padding: 50px
 }
 
 .BE-logo {
-    width: 140px;
+    width: 90px;
+    margin-left: 20px;
 }

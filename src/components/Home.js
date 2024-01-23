@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import BELogo from "../assets/BM-hi.png"
+import BELogo from "../assets/BE-hi.png"
 import './CSS/home.css'
 
 export default function Home() {
