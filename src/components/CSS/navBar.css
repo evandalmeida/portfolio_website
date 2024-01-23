@@ -1,14 +1,13 @@
 
 #logo {
     display: flex;
-    align-self: row;
+    flex-direction: row;
+    align-items: center;
 }
 
 .name {
-    display: flex;
-    align-items: flex-end;
     text-align: right;
-    font-size: 90px;
+    font-size: 60px;
 }
 
 .BMLogo {
