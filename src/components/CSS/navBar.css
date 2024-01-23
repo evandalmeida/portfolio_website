@@ -5,19 +5,21 @@
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
-    backdrop-filter: blur(10px); 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-family: 'Courier New', monospace; /* Monospace font */
+    margin-top: 10vh;
+
 }
 
 #nav-bar a {
     margin: 0 15px; /* Adjust spacing between links */
     text-decoration: none; /* Optional, for styling */
-    color: black; /* Or any color you prefer */
-    font-size: 100px; /* Optional, for styling */
+    color: rgb(197, 177, 177);
+    font-size: 70px; /* Optional, for styling */
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* Optional: Add a hover effect for links */
 #nav-bar a:hover {
-    color: #0275d8; /* Or any hover color you prefer */
+    color: white;
 }
