@@ -1,16 +1,17 @@
 import React from  'react';
 import {Link} from 'react-router-dom'
 import headerImg from '../assets/BM-hi.png'
+import './CSS/navBar.css'
 
 function NavBar() {
     return (
         <nav id='nav-bar'>
-            <Link to='/'>
-                <div className='logo'>
-                    <h1 className='logo'> EVAN D'ALMEIDA</h1>
-                    <img src={headerImg} alt="Header Img" style={{ maxWidth: '10%' }} />
-                </div>
-             </Link>
+                <Link to='/'>
+                    <div id='logo'>
+                        <h1 className='name'> EVAN</h1>
+                        <img className='BMLogo'src={headerImg} alt="Header Img"/>
+                    </div>
+                </Link>
 
             <Link to='/'> Home </Link>
             <Link to='/projects'> Projects </Link>

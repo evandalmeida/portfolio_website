@@ -1,0 +1,16 @@
+
+#about-me-intro {
+    display: flex;
+    align-self: row;
+    align-items: center;    
+}
+
+img.profile-pic {
+    border-radius: 50%;
+    width: 30%;
+}
+
+.who-am-i {
+    align-items: center;
+    width: 30%;
+}
