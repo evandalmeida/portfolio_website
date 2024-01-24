@@ -22,16 +22,9 @@
     50% { transform: translateY(-10px); }
 }
 
-
 .intro h1 {
-    font-size: 90px;
-}
-
-.BE-logo {
-    width: 90px;
-    height: 123px;
-    margin-left: 40px;
-    margin-top: 11px;
+    font-size: 80px;
+    letter-spacing: 1px;
 }
 
 

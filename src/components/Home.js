@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Projects from './Projects';
-import BELogo from "../assets/BE-hi.png"
+
 import './CSS/home.css'
 
 export default function Home() {
-    const fullText = "I'm a software engineer with a knack for full-stack development and a special love for Python and JavaScript. Scroll down to see my favorite projects!";
+    const fullText = "I'm a software engineer with a knack for full-stack development and a special love for Python and JavaScript. Scroll down to see my favorite projects.";
     const [displayText, setDisplayText] = useState('');
     const [isDeleting, setIsDeleting] = useState(false);
     const [speed, setSpeed] = useState(100);
@@ -46,8 +46,7 @@ export default function Home() {
     return (
         <div id='home-div'>
             <div className='intro'>
-                <h1>Hi, I'm Evan</h1>
-                <img className='BE-logo' src={BELogo} alt="ッ"/> 
+                <h1>Hi! I'm Evan[ee-væn],</h1>
             </div>
             <h2>{displayText}</h2>
                 <div>
