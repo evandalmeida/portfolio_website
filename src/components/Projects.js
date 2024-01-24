@@ -1,15 +1,19 @@
 import {BTProject} from './Projects/BTProject';
 import {HHMDProject} from './Projects/HHMDProject'
 import {MVProject} from './Projects/MVProject'
+import './CSS/projects.css'
 
 export default function Projects(){
 
     return (
-        <>
-            <h1>Welcome to my Portfloio</h1>
-            <HHMDProject/>
-            <MVProject/>
-            <BTProject/>
-        </>
+        <div id='projects-cont'>
+            <div className='showcase'>
+                <HHMDProject/>
+                <MVProject/>
+            </div>
+            <div className='phone'>
+                <BTProject/>
+            </div>
+        </div>
     )
 }

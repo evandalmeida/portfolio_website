@@ -1,25 +1,23 @@
 import React from 'react';
-import github from '../../assets/icons/github.bounce.pvg.svg';
-import imgURL from '../../assets/demos/HealthHarborMD.gif';
+
+import imgURL from '../../assets/demos/movieVerse Tutorial for Version 1.1.gif';
+import '../CSS/projects.css'
+
+
 
 export const MVProject = () => {
     return (
-        <div className="proj-imgbx">
-            <video src={imgURL} alt="demo" controls />
-            <div className="proj-txtx">
-                <div className="text">
-                    <h4>movieVerse</h4>
-                    <span>DESCRIPTION</span>
-                </div>
-                <a href='https://github.com/evandalmeida/movieVerse-ph1-project' target="_blank" rel="noopener noreferrer">
-                    <button className="github-button">
-                        <div className="button-content">
-                            <img className="github-icon" src={github} alt="GitHub"/>
-                            <sm className="text">Github</sm>
-                        </div>
-                    </button>
-                </a>
+        <div className="MVP">
+            <img src={imgURL} alt="demo"></img>
+            <h4>movieVerse</h4>
+            <div className='description'>
+                <h4>DESCRIPTION</h4>
+                <span>description</span>
             </div>
+            <a href='https://github.com/evandalmeida/movieVerse-ph1-project' target="_blank" rel="noopener noreferrer">
+                <button className="github-button"> CODE
+                </button>
+            </a>
         </div>
     );
 };
