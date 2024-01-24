@@ -2,10 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Projects from './Projects';
 import BELogo from "../assets/BE-hi.png"
 import './CSS/home.css'
-import whiteArrow from '../assets/icons/white.png'
 
 export default function Home() {
-    const fullText = "I'm a software engineer with a knack for full-stack development and a special love for Python and JavaScript.";
+    const fullText = "I'm a software engineer with a knack for full-stack development and a special love for Python and JavaScript. Scroll down to see my favorite projects!";
     const [displayText, setDisplayText] = useState('');
     const [isDeleting, setIsDeleting] = useState(false);
     const [speed, setSpeed] = useState(100);
@@ -25,16 +24,16 @@ export default function Home() {
         else if (isDeleting) {
             timer = setTimeout(() => {
                 setDisplayText(fullText.slice(0, displayText.length - 1));
-                setSpeed(50);
+                setSpeed(30);
             }, speed);
         }
 
-        // Switch between typing and deleting
+        // switch from typing to deleting
         if (!isDeleting && displayText === fullText) {
             timer = setTimeout(() => {
                 setIsDeleting(true);
                 setSpeed(100);
-            }, 10000); // Wait a bit before starting to delete
+            }, 10000); // wait so user can read intro 
         } else if (isDeleting && displayText === '') {
             setIsDeleting(false);
             setLoop(loop + 1);
@@ -55,9 +54,9 @@ export default function Home() {
                     <a className='arrow' href='/#projects'/> 
                 </div>
             
-            <div id='projects'>
+            <section id='projects'>
                 <Projects/>
-            </div>
+            </section>
         </div>
     
     );
