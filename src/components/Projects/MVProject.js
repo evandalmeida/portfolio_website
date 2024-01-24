@@ -8,11 +8,11 @@ import '../CSS/projects.css'
 export const MVProject = () => {
     return (
         <div className="MVP">
+            <h1>movieVerse</h1>
             <img src={imgURL} alt="demo"></img>
-            <h4>movieVerse</h4>
             <div className='description'>
                 <h4>DESCRIPTION</h4>
-                <span>description</span>
+                <text>description</text>
             </div>
             <a href='https://github.com/evandalmeida/movieVerse-ph1-project' target="_blank" rel="noopener noreferrer">
                 <button className="github-button"> CODE

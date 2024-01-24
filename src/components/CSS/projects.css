@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     gap: 5vh;
+    justify-content: center;
+    font-family: 'Avenir';
 }
 
 .showcase {
@@ -9,4 +11,32 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    gap: 10vw;
+}
+
+.HHMDP h1, .MVP h1 {
+    text-align: center;
+}
+
+.HHMDP img, .MVP img {
+    width: 30vw;
+    height: auto;
+}
+
+.BTP video {
+    width: auto;
+    height: 600px;
+}
+
+.BTP {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10vw;
+}
+
+.BTP .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 3vw;
 }

@@ -8,14 +8,14 @@ import '../CSS/projects.css'
 export const HHMDProject = () => {
     return (
         <div className="HHMDP">
+            <h1>HealthHarborMD</h1>
             <img src={imgURL} alt="demo"></img>
-            <h4>movieVerse</h4>
             <div className='description'>
-                <h4>HealthHarborMD</h4>
-                <span>description</span>
+                <h4>DESCRIPTION</h4>
+                <text>description</text>
             </div>
             <a href='https://github.com/evandalmeida/clinic-portal-ph5-project' target="_blank" rel="noopener noreferrer">
-                <button className="github-button"> CODE
+                <button className="github-button"> See the CODE!
                 </button>
             </a>
         </div>

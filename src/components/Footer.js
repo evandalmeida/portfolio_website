@@ -34,7 +34,7 @@ const Footer = () => {
 
                     <input type="email" name="user_email" placeholder="Please enter your email"/>
 
-                    <textarea name="message"placeholder="Write your emaail here :)"/>
+                    <textarea name="message"placeholder="Write your email here :)"/>
 
                     <input type="submit" value="SEND" />
 
