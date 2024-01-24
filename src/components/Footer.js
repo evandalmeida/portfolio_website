@@ -3,7 +3,6 @@ import emailjs from '@emailjs/browser';
 import MsgModal from './MsgModal';
 import linkedin from '../assets/icons/linkedinlogo.png'
 import github from '../assets/icons/githublogo.png'
-import gmail from '../assets/icons/gmaillogo.png'
 import "./CSS/footer.css"
 
 const Footer = () => {
@@ -29,44 +28,28 @@ const Footer = () => {
     return (
         <div className="footer">
             <div className="form-container">
-                <h2 className="header-msg">Send a message</h2>
+                <h2 className="header">SEND ME AN EMAIL TO GET IN TOUCH</h2>
                 <form className="form"ref={form} onSubmit={sendEmail}>
-                    <label>Name</label>
-                    <input type="text" name="user_name" placeholder="your name" />
+                    <input type="text" name="user_name" placeholder="Plese enter your name" />
 
-                    <label>Email</label>
-                    <input type="email" name="user_email" placeholder="your email"/>
+                    <input type="email" name="user_email" placeholder="Please enter your email"/>
 
-                    <label>Message</label>
-                    <textarea name="message"placeholder="write me a message"/>
+                    <textarea name="message"placeholder="Write your emaail here :)"/>
 
-                    <input type="submit" value="Send" />
-                    </form>
-            </div>
-            <div className= "connect-container">
-                <h2 className="connect-msg">Connect with me!</h2>
+                    <input type="submit" value="SEND" />
+
+                </form>
+
                 <div className="logos-container">
-                    <div className="logos">
-                    <div className="logo">
-                        <a href="https://www.linkedin.com/in/evan-d-almeida/" target="_blank">
-                            <img className="logo-img" src={linkedin} alt="linkedin"/>
-                            <p>Linkedin</p>
-                        </a>
-                    </div>
-                    <div className="logo">
-                        <a href="https://github.com/evandalmeida"  target="_blank">
-                            <img className="logo-img" src={github} alt="github"/>
-                            <p>Github</p>
-                        </a>
-                    </div>
-                    <div className="logo">
-                        <a href="mailto:evandalmeida@gmail.com">
-                        <img className="logo-img" src={gmail} alt="email"/>
-                        <p>Email me!</p>
-                        </a>
-                    </div>
-                    </div>
+                    <h3> Check these out too: </h3>
+                    <a href="https://www.linkedin.com/in/evan-d-almeida/" target="_blank">
+                        <img className="linkedin-logo" src={linkedin} alt="linkedin"/>
+                    </a>
+                    <a href="https://github.com/evandalmeida"  target="_blank">
+                        <img className="github-logo" src={github} alt="github"/>
+                    </a>
                 </div>
+            
             </div>
             <MsgModal show={show} onHide={() => setShow(false)} /> 
         </div>
