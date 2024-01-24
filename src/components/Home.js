@@ -5,7 +5,7 @@ import './CSS/home.css'
 import whiteArrow from '../assets/icons/white.png'
 
 export default function Home() {
-    const fullText = "I'm a software engineer with a knack for full-stack development and a special love for Python. My experience blends robust technical expertise with an innovative approach to tackling complex challenges.";
+    const fullText = "I'm a software engineer with a knack for full-stack development and a special love for Python and JavaScript.";
     const [displayText, setDisplayText] = useState('');
     const [isDeleting, setIsDeleting] = useState(false);
     const [speed, setSpeed] = useState(100);
@@ -34,7 +34,7 @@ export default function Home() {
             timer = setTimeout(() => {
                 setIsDeleting(true);
                 setSpeed(100);
-            }, 2000); // Wait a bit before starting to delete
+            }, 10000); // Wait a bit before starting to delete
         } else if (isDeleting && displayText === '') {
             setIsDeleting(false);
             setLoop(loop + 1);
@@ -47,7 +47,7 @@ export default function Home() {
     return (
         <div id='home-div'>
             <div className='intro'>
-                <h1>Hello! I'm Evan D'Almeida</h1>
+                <h1>Hi, I'm Evan</h1>
                 <img className='BE-logo' src={BELogo} alt="ッ"/> 
             </div>
             <h2>{displayText}</h2>
