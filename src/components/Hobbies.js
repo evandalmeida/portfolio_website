@@ -47,7 +47,9 @@ export const Hobbies = () => {
                 <p>
                     When I'm not coding or cycling, I like to watch these shows:
                 </p>
-                <Carousel responsive={responsive} infinite={true} className = "carousel">{myShows}</Carousel>
+                <div>
+                    <Carousel responsive={responsive} infinite={true} className = "carousel">{myShows}</Carousel>
+                </div>
             </div>
 
 

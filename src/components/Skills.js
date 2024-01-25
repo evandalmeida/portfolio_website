@@ -31,7 +31,7 @@ export const Skills = () => {
                             <tr>
                                 <td>
                                     <div className="skill-bx">
-                                        <img src={js} alt="javascript"/>
+                                        <img src={js} alt="javascript" />
                                         <p className="skill-name">JavaScript</p>
                                     </div>
                                 </td>

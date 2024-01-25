@@ -9,7 +9,7 @@ import bing from '../assets/bing.png'
 export default function AboutMe () {
 
     return (
-        <div>
+        <div className='about-me'>
             <div id='about-me-intro'>
                 <img className="profile-pic" src={pictureOfMe} alt='profile'/>
                 <div className='who-am-i'>
@@ -32,13 +32,13 @@ export default function AboutMe () {
                     <div className= "ed">
                         <div className='schools'>
                             <img className="flatiron" src={flatrion} alt="flatiron"/>
-                            <p>Full-Stack Software Engineering Program</p>
+                            <h2>Full-Stack Software Engineering Program</h2>
                         </div>
                         <div className='schools'>
                             <img className="bing"src={bing} alt="binghamton logo"/>
                             <div className="bing-text">
-                                <p>Binghamton University, SUNY</p>
-                                <p>Bachelor of Science in Neuroscience</p>
+                                <h2>Binghamton University, SUNY</h2>
+                                <h3>Bachelor of Science in Neuroscience</h3>
                             </div>
                         </div>
                     </div>
