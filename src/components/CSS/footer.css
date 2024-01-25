@@ -19,9 +19,10 @@
     background-color: black;
 }
 
-.header {
+.footer-header {
     padding: auto;
     color: white;
+    text-align: center;
 }
 
 .form {
@@ -47,7 +48,7 @@
     border: 2px solid #ddd;
     border-radius: 10px;
     width: 85%;
-    height: 70%;
+    height: 20vh;
     background-color: black;
     color: white;
     font-weight: bolder;

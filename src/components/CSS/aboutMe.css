@@ -3,24 +3,39 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;    
+    justify-content: center;
+    gap: 5vw;
     margin: 50px;
+    margin-bottom: 10vh;
 }
 
 img.profile-pic {
     border-radius: 50%;
     width: 30%;
+    border: 3px solid white;
+    margin-top: 20vh;
 }
 
 .who-am-i {
     align-items: center;
-    width: 30%;
+    width: 40%;
     text-align: center;
 }
 
+
+.who-am-i h1 {
+    font-size: 90px;
+}
+
+
 .intro-summary {
     width: 100%;
-    text-align: left;
+    text-align: center;
+    padding: 10px 15px;
+    border: 3px solid white;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: 100;
 }
 
 
@@ -57,10 +72,49 @@ img.profile-pic {
     text-align: left;
     padding:10px;
     margin-left: 10vw;
+    font-size: 90px;
 }
 
 .skills-table {
 
     justify-self: center;
     width: 10vw;
+}
+
+
+/* SOFT SKILLS*/
+
+.soft-skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.soft-skills p {
+    font-size: 40px;
+}
+
+.header-ss {
+    text-align: center;
+    font-size: 90px;
+}
+
+.BE-happy {
+    margin-right: 15px;
+}
+
+.ed-ss {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+/* ED */
+
+.header-ed {
+    text-align: center;
+    font-size: 90px;
 }
