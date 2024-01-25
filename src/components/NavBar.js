@@ -4,17 +4,26 @@ import BELogo from "../assets/BE-hi.png"
 import './CSS/navBar.css'
 
 function NavBar() {
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+
+
     return (
         <div id='main-navigation'>
             <div id='logo'>
-                <Link className='name-logo' to='/'>EVAN <br/> D'ALMEIDA</Link>
+                <a href='/#root'className='name-logo' onClick={scrollToTop}>EVAN <br/> D'ALMEIDA</a>
                 <img className='BE-logo' src={BELogo} alt="ッ"/> 
             </div>
         <nav id='nav-bar'>
-            <Link to='/'> HOME </Link>
-            <a href='/#projects'> PROJECTS </a>
-            <Link to='/about-me'> ABOUT </Link>
-            <Link to='/resume'> RESUME </Link>
+            <a href='/#root' onClick={scrollToTop} > HOME </a>
+            <Link to='/projects'> PROJECTS </Link>
+            <Link to='/about-me' onClick={scrollToTop}> ABOUT </Link>
+            <Link to='/resume' onClick={scrollToTop}> RESUME </Link>
         </nav>
         </div>
     )
