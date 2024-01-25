@@ -49,10 +49,7 @@ export default function Home() {
                 <h1>Hi! I'm Evan[ee-væn],</h1>
             </div>
             <h2>{displayText}</h2>
-                <div>
-                    <a className='arrow' href='/#projects'/> 
-                </div>
-            
+
             <section id='projects'>
                 <Projects/>
             </section>

@@ -1,5 +1,6 @@
 import pictureOfMe from '../assets/linkedin.jpg'
 import './CSS/aboutMe.css'
+import {Skills} from './Skills'
 
 export default function AboutMe () {
 
@@ -8,26 +9,44 @@ export default function AboutMe () {
             <div id='about-me-intro'>
                 <img className="profile-pic" src={pictureOfMe} alt='profile'/>
                 <div className='who-am-i'>
-                    <h2>Who am I?</h2>
-                    <span>
-                        Hello, my is Evan D'almeida, and I am thrilled to share my portfolio with you. As a dedicated software engineer, my passion lies in collaborating with teams to design and develop innovative solutions that address key business challenges. My expertise lies in designing and developing robust solutions by leveraging my strong skills in JavaScript and Python. This portfolio is a showcase of not just my technical abilities, but also my journey in the tech industry. I invite you to explore my portfolio and get to know more about me.
-                    </span>
+                    <h1>Who am I?</h1>
+                    <div className='intro-summary'>
+                        <h2>Hello, my is Evan D’Almeida, and I am thrilled to share my portfolio with you.</h2>
+                        <h2>I am a dedicated software engineer, my passion lies in collaborating with teams to design and develop innovative solutions that address business challenges. </h2>
+                        <h2>I have a strong foundation building projects using Python and JavaScript.</h2>
+                    </div>
                 </div>
             </div>
+
             <div>
-                <h2>Techincal Skills</h2>
+   
+                <Skills/>
+            </div>
+
+            <div>
+                <h1 className='header'>Soft Skills</h1>
+                <div className= "soft-skills">
+                <div className="soft-skills-text">
+                    <p>Team Player</p>
+                    <p>Problem-Solver</p>
+                    <p>Innovative</p>
+                </div>
+                <div className= "soft-skills-text">
+                    <p>Detail Oriented</p>
+                    <p>Ambitious</p>
+                    <p>Critical Thinker</p>
+                </div>
+            </div>
+            </div>
+
+            <div>
+                <h1 className='header'>Education</h1>
             </div>
             <div>
-                <h2>Soft Skills</h2>
+                <h1 className='header'>Work Experience</h1>
             </div>
             <div>
-                <h2>Education</h2>
-            </div>
-            <div>
-                <h2>Work Experience</h2>
-            </div>
-            <div>
-                <h2>Hobbies</h2>
+                <h1 className='header'>Hobbies</h1>
             </div>
         </>
     )

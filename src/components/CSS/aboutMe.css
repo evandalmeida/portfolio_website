@@ -1,8 +1,10 @@
-
+/* ABOUTME.JS */
 #about-me-intro {
     display: flex;
-    align-self: row;
-    align-items: center;    
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;    
+    margin: 50px;
 }
 
 img.profile-pic {
@@ -13,4 +15,52 @@ img.profile-pic {
 .who-am-i {
     align-items: center;
     width: 30%;
+    text-align: center;
+}
+
+.intro-summary {
+    width: 100%;
+    text-align: left;
+}
+
+
+/* SKILL.JS */
+.skill-bx img, .tool-bx img {
+    width: 7vw;
+    height: auto;
+
+}
+
+#all-skills-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tech-skills-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;  
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.skill-name {
+    text-align: center;
+}
+
+.header {
+    text-align: left;
+    padding:10px;
+    margin-left: 10vw;
+}
+
+.skills-table {
+
+    justify-self: center;
+    width: 10vw;
 }
