@@ -4,7 +4,9 @@
     gap: 5vh;
     justify-content: center;
     font-family: 'Avenir';
+    padding-top: 15em;
 }
+
 
 .showcase {
     display: flex;
@@ -14,24 +16,35 @@
     gap: 10vw;
 }
 
-.HHMDP h1, .MVP h1 {
-    text-align: center;
+.BTP h1, .HHMDP h1, .MVP h1 {
+    text-align: left;
+    font-size: 5vh;
+    margin: 2vh 0 1vh;
+}
+
+
+
+.HHMDP p, .MVP p {
+    margin: .5vh auto .5vh;
 }
 
 .HHMDP img, .MVP img {
     width: 30vw;
     height: auto;
-}
-
-.BTP video {
-    width: auto;
-    height: 600px;
+    border-radius: 10px;
 }
 
 .BTP {
     display: flex;
     flex-direction: row;
     margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.BTP video {
+    width: auto;
+    height: 600px;
+    border-radius: 10px;
 }
 
 .BTP .description {
@@ -39,4 +52,39 @@
     flex-direction: column;
     justify-content: left;
     padding-left: 3vw;
+    width: 100%;
+}
+
+.BTP p {
+    text-align: left;
+}
+
+.projects-cont {
+    width: 90vw;
+    height: auto;
+}
+
+.demo-cont {
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 4em;
+}
+
+
+.project-block {
+    margin: 1em 0 1em;
+    width: 100%;
+    border-bottom: 2px solid white;
+}
+
+.github-button {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    margin: 10px auto 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 5vw;
+    letter-spacing: 3px;
 }
