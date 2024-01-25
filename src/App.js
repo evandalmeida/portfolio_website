@@ -15,7 +15,7 @@ function App() {
         top: 0,
         behavior: "smooth"
     });
-};
+  };
 
   return (
     <div className="App">

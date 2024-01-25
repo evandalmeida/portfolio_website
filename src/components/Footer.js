@@ -27,11 +27,9 @@ export default function Footer ({scrollToTop}) {
 
     return (
         <div className='footer-cont'>
-
-
-
+            <div className='block'></div>
             <div className="footer">
-                <div className="form-container">
+                <div id='footer-main-div' className="form-container">
                     <h2 className="footer-header">SEND ME AN EMAIL TO GET IN TOUCH</h2>
                     <form className="form"ref={form} onSubmit={sendEmail}>
                         <input type="text" name="user_name" placeholder="Plese enter your name" />

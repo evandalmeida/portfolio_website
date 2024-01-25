@@ -7,6 +7,9 @@
     padding-top: 10em;
 }
 
+#projects-cont .showcase {
+    align-items: center;
+}
 
 .showcase {
     display: flex;
@@ -61,6 +64,7 @@
 .projects-cont {
     width: 90vw;
     height: auto;
+
 }
 
 .demo-cont {

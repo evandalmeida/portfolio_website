@@ -6,8 +6,12 @@ import './CSS/navBar.css'
 function NavBar({scrollToTop}) {
 
 
-
-
+    const scrollToBottom = () => {
+        window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: "smooth"
+        });
+    };
     return (
         <div id='main-navigation'>
             <div id='logo'>
@@ -16,9 +20,10 @@ function NavBar({scrollToTop}) {
             </div>
         <nav id='nav-bar'>
             <a href='/#root' onClick={scrollToTop} > HOME </a>
-            <Link to='/projects'> PROJECTS </Link>
+            <Link to='/projects' onClick={scrollToTop}> PROJECTS </Link>
             <Link to='/about-me' onClick={scrollToTop}> ABOUT </Link>
             <Link to='/resume' onClick={scrollToTop}> RESUME </Link>
+            <button onClick={scrollToBottom}> CONTACT ME </button>
         </nav>
         </div>
     )
