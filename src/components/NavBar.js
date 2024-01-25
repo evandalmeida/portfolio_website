@@ -3,14 +3,9 @@ import {Link} from 'react-router-dom'
 import BELogo from "../assets/BE-hi.png"
 import './CSS/navBar.css'
 
-function NavBar() {
+function NavBar({scrollToTop}) {
 
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    };
+
 
 
     return (

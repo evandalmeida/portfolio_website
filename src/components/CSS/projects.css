@@ -11,9 +11,8 @@
 .showcase {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    gap: 10vw;
+    align-items: flex-start;
+    gap: 3vw;
 }
 
 .BTP h1, .HHMDP h1, .MVP h1 {
@@ -29,7 +28,7 @@
 }
 
 .HHMDP img, .MVP img {
-    width: 30vw;
+    width: 40vw;
     height: auto;
     border-radius: 10px;
 }
@@ -42,8 +41,8 @@
 }
 
 .BTP video {
-    width: auto;
-    height: 600px;
+    width: 19vw;
+    height: auto;
     border-radius: 10px;
 }
 

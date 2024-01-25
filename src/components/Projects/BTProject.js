@@ -10,7 +10,7 @@ export const BTProject = () => {
     return (
         <div className="BTP">
             <div className='demo-cont'>
-                <video src={imgURL} alt="demo"></video>
+                <video src={imgURL} alt="demo" loop autoPlay></video>
             </div>
             <div className='description'>
                 <h1>Bike Tracer</h1>

@@ -7,17 +7,16 @@ import './CSS/resume.css'
 export const Resume = () => {
     return(
             <div className="resume-container">
-                <div className = "resume-download-button">
-                    <h2 className="resume-head">Download my resume </h2>
-                    <a href={resume} download="Evan D'Alemida's Resume">
-                        <img className='download' src={download} alt="download" />
-                    </a>
-                </div>
+                <h1 className='resume-header'>MY RESUME</h1>
                 <div className="resume-image-container">
                     <img className="resume-image" src={my_resume} alt="Resume" />
                 </div>
-                <div className='.resume-container-text '>
-                    <h2>Thank you for taking a look at my resume, don't heastiate to reach out if you have any questions.</h2>
+                <div className='resume-end-text'>
+                    <h2 className='resume-ty'>Thank you for taking a look at my resume, don't heastiate to reach out if you have any questions.</h2>
+                    <a className='download-button' href={resume} download="Evan D'Alemida's Resume">
+                        <img className='download-img' src={download} alt="download" />
+                        <h2 className="resume-download">Click Here to Download</h2>
+                    </a>
                 </div>
             </div>
     )

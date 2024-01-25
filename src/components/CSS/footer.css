@@ -1,18 +1,18 @@
 .footer {
-    margin: 10vh auto 5vh;
+    margin: 10vh auto 1vh;
+    width: 30vw;
     display: flex;
     text-align: center;
     justify-content: center;
     bottom: 0;
     font-family: 'Courier New', monospace;
-
     font-size: larger;
 }
 
 .form-container {
     padding: 20px;
     margin: 10px;
-    width: 30%;
+
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     border: 2px solid white;
     border-radius: 20px;
@@ -126,4 +126,23 @@
         flex-direction: column;
         gap: 10px;
     }
+}
+
+
+
+.footer-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    margin: 1vh auto 10vh;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 20%;
+    letter-spacing: 3px;
 }

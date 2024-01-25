@@ -1,3 +1,9 @@
+.resume-header {
+    font-size: 3rem;
+    letter-spacing: .5vw;
+    margin-bottom: 1vh;
+}
+
 .resume-container {
     display: flex;
     flex-direction: column;
@@ -5,30 +11,55 @@
     gap: 2vh;
 }
 
-.resume-container-text h2 {
-    text-align: center;
-    font-size: larger;
-}
-
 .resume-image-container {
     display: flex;
     align-self: center;
     justify-content: center;
-}
-
-.resume-download-button {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-self: center;
-    justify-content: center; /* Centering the button */
+    margin-bottom: 0px;
 }
 
 .resume-image {
-    width: 50%;
+    width: 50vw;
+    margin-bottom: 0px;
+}
+
+
+.resume-end-text {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    align-items: center;
+}
+
+.resume-ty {
+    font-size: 1.7rem;
+    width: 30vw;
+    text-align: center;
+    margin-bottom: 5vh;
+    margin-top: 0px;
+}
+
+.download-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.download-img {
+    width: 30px;
+    height: auto;
+    padding: 0px;
+}
+
+.resume-download {
+    font-weight: 500;
+    margin-top: 2px;
+    font-size: 1.5rem;
+    text-align: center;
 
 }
 
-.pointer {
-    align-self: flex-end;
+.download-button h2:visited {
+    color: greenyellow;
 }

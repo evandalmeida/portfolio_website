@@ -9,10 +9,18 @@ import Resume from './components/Resume'
 import Footer from './components/Footer'
 
 function App() {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+};
+
   return (
     <div className="App">
       <BrowserRouter>
-      <NavBar/>
+      <NavBar scrollToTop={scrollToTop} />
           <Routes>
             <Route 
               index='true' 
@@ -32,7 +40,7 @@ function App() {
               element={<Resume />}
               />
           </Routes>
-        <Footer/>
+        <Footer scrollToTop={scrollToTop}/>
       </BrowserRouter>
     </div>
   );

@@ -5,7 +5,7 @@ import linkedin from '../assets/icons/linkedinlogo.png'
 import github from '../assets/icons/githublogo.png'
 import "./CSS/footer.css"
 
-const Footer = () => {
+export default function Footer ({scrollToTop}) {
     const form = useRef();
     const [show, setShow] = useState(false);
 
@@ -26,34 +26,40 @@ const Footer = () => {
 };
 
     return (
-        <div className="footer">
-            <div className="form-container">
-                <h2 className="footer-header">SEND ME AN EMAIL TO GET IN TOUCH</h2>
-                <form className="form"ref={form} onSubmit={sendEmail}>
-                    <input type="text" name="user_name" placeholder="Plese enter your name" />
+        <div className='footer-cont'>
 
-                    <input type="email" name="user_email" placeholder="Please enter your email"/>
 
-                    <textarea name="message"placeholder="Write your email here :)"/>
 
-                    <input type="submit" value="SEND" />
+            <div className="footer">
+                <div className="form-container">
+                    <h2 className="footer-header">SEND ME AN EMAIL TO GET IN TOUCH</h2>
+                    <form className="form"ref={form} onSubmit={sendEmail}>
+                        <input type="text" name="user_name" placeholder="Plese enter your name" />
 
-                </form>
+                        <input type="email" name="user_email" placeholder="Please enter your email"/>
 
-                <div className="logos-container">
-                    <h3> Check these out too: </h3>
-                    <a href="https://www.linkedin.com/in/evan-d-almeida/" target="_blank">
-                        <img className="linkedin-logo" src={linkedin} alt="linkedin"/>
-                    </a>
-                    <a href="https://github.com/evandalmeida"  target="_blank">
-                        <img className="github-logo" src={github} alt="github"/>
-                    </a>
+                        <textarea name="message"placeholder="Write your email here :)"/>
+
+                        <input type="submit" value="SEND" />
+
+                    </form>
+
+                    <div className="logos-container">
+                        <h3> Check these out too: </h3>
+                        <a href="https://www.linkedin.com/in/evan-d-almeida/">
+                            <img className="linkedin-logo" src={linkedin} alt="linkedin"/>
+                        </a>
+                        <a href="https://github.com/evandalmeida">
+                            <img className="github-logo" src={github} alt="github"/>
+                        </a>
+                    </div>
+                
                 </div>
-            
+                <MsgModal show={show} onHide={() => setShow(false)} /> 
             </div>
-            <MsgModal show={show} onHide={() => setShow(false)} /> 
+            <button className='top' onClick={scrollToTop}> BACK TO THE TOP </button>
         </div>
     );
 };
 
-export default Footer;
+
