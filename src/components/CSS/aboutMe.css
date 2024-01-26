@@ -278,18 +278,90 @@
 
 
 /* WORK */
+.job-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:90%;
+}
 
+.job-title h2, .job-title h3 {
+    font-size: 1rem;
+}
 
+.name {
+    text-shadow:    
+        0 0 1px black,     
+        0 0 5px orange,
+        0 0 10px orange,
+        0 0 20px orange,
+        0 0 40px orange;
+}
+
+.location {
+    text-shadow: 
+        0 0 5px black,
+        0 0 10px #00BFFF,
+        0 0 20px #00BFFF,
+        0 0 40px #00BFFF,
+        0 0 80px #00BFFF; 
+}
+
+.job-title h3 {
+    text-shadow: 
+    0 0 5px black,
+    0 0 10px white,
+    0 0 20px white,
+    0 0 40px white,
+    0 0 80px white; 
+}
+
+.bar {
+    text-shadow: 
+        0 0 2px black,
+        0 0 4px white,
+        0 0 6px white,
+        0 0 8px white,
+        0 0 10px white;
+}
+
+.jobs {
+    display: flex;
+    flex-direction: column;
+}
+
+#work {
+    display: flex;
+    flex-direction: column;
+}
 
 .work-header{
     text-align: center;
     font-size: 5.5rem;
     letter-spacing: -6px;
-    margin-bottom: 7vh;
+    margin-bottom: 1vh;
     text-shadow: 
         0 0 2px black,
         0 0 4px white,
         0 0 6px white;
+}
+
+.job-cont {
+    width: 50vw;
+    margin-left: 10vw;
+}
+
+.job-cont p {
+    width: 90%;
+    font-size: .9rem;
+}
+
+.job-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: .5rem;
 }
 
 
@@ -372,3 +444,4 @@
     flex-direction: row;
     align-items: center;
 }
+
