@@ -1,8 +1,12 @@
-import flatrion from '../assets/flatiron.png'
-import bing from '../assets/bing.png'
 import './CSS/aboutMe.css'
 
+import flatrion from '../assets/flatiron.png'
+import bing from '../assets/bing.png'
+
+
+
 export default function Education() {
+    
     return (
         <div className='ed-cont'>
             <h1 className='header-ed'>Education</h1>

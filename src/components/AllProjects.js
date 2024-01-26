@@ -3,6 +3,8 @@ import {HHMDProject} from './Projects/HHMDProject'
 import {MVProject} from './Projects/MVProject'
 import './CSS/projects.css'
 
+
+
 export default function AllProjects(){
 
     return (
@@ -11,9 +13,7 @@ export default function AllProjects(){
                 <HHMDProject/>
                 <MVProject/>
             </div>
-            <div className='phone'>
-                <BTProject/>
-            </div>
+            <div className='phone'><BTProject/></div>
         </div>
-    )
-}
+    );
+};

@@ -29,7 +29,6 @@
     margin-bottom: 0px;
 }
 
-
 .resume-end-text {
     display: flex;
     flex-direction: column;
@@ -48,7 +47,6 @@
     font-size: 1rem;
     font-weight: lighter;
 }
-
 
 .download-button {
     display: flex;
@@ -71,7 +69,6 @@
     margin-top: 2px;
     font-size: 1.5rem;
     text-align: center;
-
 }
 
 .download-button h2:visited {

@@ -2,7 +2,6 @@
     font-family: 'Typeface', sans-serif;
 }
 
-
 #all-projects-cont {
     display: flex;
     flex-direction: column;
@@ -18,7 +17,6 @@
 
 }
 
-
 .showcase-projects {
     align-items: center;
     display: flex;
@@ -27,7 +25,6 @@
     gap: 3vw;
     margin-bottom: 10vh;
 }
-
 
 #projects-cont {
     display: flex;
@@ -46,7 +43,6 @@
     gap: 3vw;
 }
 
-
 .showcase {
     display: flex;
     flex-direction: row;
@@ -55,15 +51,11 @@
     margin-bottom: 10vh;
 }
 
-
-
 .BTP h1, .HHMDP h1, .MVP h1 {
     text-align: left;
     font-size: 5vh;
     margin: 2vh 0 1vh;
 }
-
-
 
 .HHMDP p, .MVP p {
     margin: .5vh auto .5vh;
@@ -103,7 +95,6 @@
 .projects-cont {
     width: 90vw;
     height: auto;
-
 }
 
 .demo-cont {
@@ -111,7 +102,6 @@
     border-radius: 20px;
     padding: 3em;
 }
-
 
 .project-block {
     margin: 1em 0 1em;

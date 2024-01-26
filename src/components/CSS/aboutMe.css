@@ -16,7 +16,6 @@
     margin-top: 1px;
 }
 
-
 .profile-pic {
     border-radius: 50%;
     width: 30vw;
@@ -27,7 +26,6 @@
         0 0 20px white,
         0 0 40px white;
     margin-top: 7vh;
-    
 }
 
 .who-am-i {
@@ -56,10 +54,6 @@
         0 0 40px orange;
 }
 
-
-
-
-
 .intro-summary {
     width: 40vw;
     padding: 10px 15px;
@@ -71,14 +65,12 @@
     font-size: 1.5rem;
     font-weight: 400;
     text-shadow:  
-    0 0 1px black,         
-    0 0 5px #00bfff,
-    0 0 10px #00BFFF,
-    0 0 20px #00BFFF,
-    0 0 40px #00BFFF;
+        0 0 1px black,         
+        0 0 5px #00bfff,
+        0 0 10px #00BFFF,
+        0 0 20px #00BFFF,
+        0 0 40px #00BFFF;
 }
-
-
 
 /* TECHSKILL.JS */
 .all-skills-cont {
@@ -113,14 +105,11 @@
         0 0 6px white;
 }
 
-
 .tech-skills-cont {
     display: flex;
     flex-direction: column;
     margin-bottom: 5vh;
 }
-
-
 
 .tech-skills-heading {
     display: flex;
@@ -140,8 +129,6 @@
     padding: 10px;
 }
 
-
-
 .header-tech-skills {
     text-align: center;
     font-size: 5rem;
@@ -159,7 +146,6 @@
     width: 20vw;
 }
 
-
 /* SOFT SKILLS*/
 .soft-skills {
     display: flex;
@@ -174,17 +160,10 @@
     font-weight: bolder;
 }
 
-.soft-skills-text-1:hover {
-    transform: scale(1.45); 
-    transition: transform 0.9s ease-in-out;
+.soft-skills-text p:hover {
+    transform: scale(1.6); 
+    transition: transform 0.3s ease-in-out;
 }
-
-.soft-skills-text-2:hover {
-    transform: scale(1.45); 
-    transition: transform 0.9s ease-in-out;
-
-}
-
 
 .header-ss{
     text-align: center;
@@ -198,7 +177,7 @@
 }
 
 .BE-happy {
-    margin-right: 15px;
+    margin-right: 2vw;
     width: 13vw;
     height: auto;
 }
@@ -207,7 +186,6 @@
     display: flex;
     flex-direction: row;
 }
-
 
 .soft-skills-cont, .ed-cont {
     width: 50vw;
@@ -262,7 +240,6 @@
 }
 
 #flatiron h2:hover {
-
     text-shadow: 
         0 0 5px #00BFFF,
         0 0 10px #00BFFF,
@@ -277,19 +254,12 @@
     padding-left: 8vw;
 }
 
-
-
 /* WORK */
 .job-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width:90%;
-}
-
-.job-title h2, .job-title h3 {
-    font-size: 1rem;
 }
 
 .name {
@@ -297,26 +267,28 @@
         0 0 1px black,     
         0 0 5px orange,
         0 0 10px orange,
-        0 0 20px orange,
-        0 0 40px orange;
+        0 0 20px orange;
 }
 
 .location {
     text-shadow: 
-        0 0 5px black,
+        0 0 1px black,
+        0 0 5px #00BFFF,
         0 0 10px #00BFFF,
-        0 0 20px #00BFFF,
-        0 0 40px #00BFFF,
-        0 0 80px #00BFFF; 
+        0 0 20px #00BFFF;
+}
+
+.job-title h2 {
+    font-size: 1.35rem;
 }
 
 .job-title h3 {
+    font-size: 1.2rem;
+    font-family: 'Typeface', monospace;
     text-shadow: 
-    0 0 5px black,
-    0 0 10px white,
-    0 0 20px white,
-    0 0 40px white,
-    0 0 80px white; 
+        0 0 1px black,
+        0 0 5px white,
+        0 0 10px white;
 }
 
 .bar {
@@ -331,8 +303,9 @@
 .jobs {
     display: flex;
     flex-direction: column;
-    width: 50vw;
-    margin-left: 10vw;
+    width: 60vw;
+    margin-right: 2vw;
+    margin-left: 3vw;    
 }
 
 #work {
@@ -341,23 +314,16 @@
 }
 
 .work-header{
-    text-align: center;
-    font-size: 4rem;
+    text-align: left;
+    font-size: 5.5rem;
     letter-spacing: -6px;
-    margin-bottom: 1vh;
+    margin-bottom: 2.5vh;
+    margin-top: 3vh;
+    margin-left: 17vw;
     text-shadow: 
         0 0 2px black,
         0 0 4px white,
         0 0 6px white;
-}
-
-.job-cont {
-    width: 100%;
-}
-
-.job-cont p {
-    width: 90%;
-    font-size: .9rem;
 }
 
 .job-header {
@@ -367,19 +333,21 @@
     gap: .5rem;
 }
 
-
 /* HOBBIES */
 .hobbies {
     display: flex;
     align-items: center;
     flex-direction: column ;
+    margin-right: 3vw;
+    margin-left: 1vw;   
+    width: 30vw;
 }
 
 .hobby-img {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
-
 
 .hobbies-cont {
     display: flex;
@@ -396,6 +364,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .carousel-cont h1 {
@@ -403,7 +372,7 @@
 }
 
 .carousel-cont img {
-    height: 200px;
+    height: 10vh;
     object-fit: cover;
     margin: 1rem;
     border: .5px solid white;
@@ -416,9 +385,22 @@
 
 .header-hobbies {
     text-align: center;
-    font-size: 5rem;
-    letter-spacing: -6px;
-    margin-bottom: 1px;
+    font-size: 3.5rem;
+    letter-spacing: -3px;
+    margin-bottom: .1vh;
+    margin-top: 2.5vh;
+    text-shadow: 
+        0 0 2px black,
+        0 0 4px white,
+        0 0 6px white;
+}
+
+.header-shows {
+    text-align: center;
+    font-size: 3.5rem;
+    letter-spacing: -3px;
+    padding-top: 6vh;
+    margin-bottom: .4vh;
     text-shadow: 
         0 0 2px black,
         0 0 4px white,
@@ -427,9 +409,9 @@
 
 .button-p {
     transform: rotate(-45deg);
-    height: 2rem;
-    width: 2rem;
-    background-color: rgba(0, 0, 0, 0.114);
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: rgba(0, 0, 0, 0.0000001);
     border: none;
     border-top: 1px solid white;
     border-left: 1px solid white;
@@ -438,9 +420,9 @@
 
 .button-n {
     transform: rotate(45deg);
-    height: 2rem;
-    width: 2rem;
-    background-color: rgba(0, 0, 0, 0.114);
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: rgba(0, 0, 0, 0.0000001);
     border: none;
     border-top: 1px solid white;
     border-right: 1px solid white;
@@ -450,7 +432,6 @@
 .hi {
     display: flex;
     flex-direction: row;
-    gap: 10vw;
 }
 
 .button-cont {
@@ -459,8 +440,29 @@
     align-items: center;
 }
 
-
 #work-hobbies {
     display: flex;
     flex-direction: row;
+}
+
+.running h2 {
+    padding:1px;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    letter-spacing: 1px;
+}
+
+.music h2 {
+    padding:1px;
+    text-align: right;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-size: 1.5rem;
+}
+
+.live-music {
+    letter-spacing: 1px;
 }

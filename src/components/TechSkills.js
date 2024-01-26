@@ -1,3 +1,5 @@
+import "./CSS/aboutMe.css"
+
 import js from '../assets/icons/icons8-javascript.svg'
 import react from '../assets/icons/react.svg'
 import tailwind from '../assets/icons/tailwind.svg'
@@ -12,7 +14,6 @@ import json from '../assets/icons/json-web-token.svg'
 import vsCode from '../assets/icons/vscode.svg'
 import mac from '../assets/icons/macos.svg'
 
-import "./CSS/aboutMe.css"
 
 
 export default function TechSkills() {
@@ -22,7 +23,6 @@ export default function TechSkills() {
             <div>
                 <h1 className='header-tech-skills' >Techincal Skills</h1>
             </div>
-
             <div className='all-skills-cont'>
                 <div className='tech-skills-heading'>
                     <h2>Front-End</h2>
@@ -71,7 +71,6 @@ export default function TechSkills() {
                         </tbody>
                     </table>
                 </div>
-
                 <div className='tech-skills-heading'>
                     <h2>Back-End</h2>
                     <table className='skills-table'>
@@ -99,11 +98,8 @@ export default function TechSkills() {
                         </tbody>
                     </table>
                 </div>
-        
-            
                 <div className='tech-skills-heading'>
                     <h2>Developemntal Skills</h2>
-
                     <table >
                         <tbody>
                             <tr>
@@ -139,6 +135,5 @@ export default function TechSkills() {
                 </div>
             </div>
         </div>
-
     );
 };

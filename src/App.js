@@ -8,7 +8,9 @@ import AboutMe from './components/AboutMe'
 import Resume from './components/Resume'
 import Footer from './components/Footer'
 
-function App() {
+
+
+export default function App() {
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -44,6 +46,4 @@ function App() {
       </BrowserRouter>
     </div>
   );
-}
-
-export default App;
+};

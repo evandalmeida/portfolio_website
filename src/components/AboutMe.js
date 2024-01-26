@@ -1,10 +1,13 @@
-import pictureOfMe from '../assets/linkedin.jpeg'
 import './CSS/aboutMe.css'
+
+import pictureOfMe from '../assets/linkedin.jpeg'
 import TechSkills from './TechSkills'
 import Hobbies from './Hobbies'
 import Education from './Education'
 import SoftSkills from './SoftSkills'
 import Work from './Work.js'
+
+
 
 export default function AboutMe () {
 
@@ -21,24 +24,15 @@ export default function AboutMe () {
                     </div>
                 </div>
             </div>
-
             <div id='tech-skills'><TechSkills/></div>
-            
             <div id='ed-ss'>
                 <Education/>
                 <SoftSkills/>
             </div>
-            
             <div id='work-hobbies'>
-                <div id='work'>
-                    <Work/>
-                </div>
-                <div id='hobbies'>
-                    <Hobbies/>
-                </div>
+                <div id='work'><Work/></div>
+                <div id='hobbies'><Hobbies/></div>
             </div>
-         
-                
         </div>
-    )
-}
+    );
+};

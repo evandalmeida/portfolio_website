@@ -14,14 +14,14 @@ export default function Home() {
     useEffect(() => {
         let timer;
 
-        // Typing effect
+        // typing effect
         if (!isDeleting && displayText.length < fullText.length) {
             timer = setTimeout(() => {
                 setDisplayText(fullText.slice(0, displayText.length + 1));
                 setSpeed(50);
             }, speed);
         } 
-        // Deleting effect
+        // deleting effect
         else if (isDeleting) {
             timer = setTimeout(() => {
                 setDisplayText(fullText.slice(0, displayText.length - 1));
@@ -29,20 +29,20 @@ export default function Home() {
             }, speed);
         }
 
-        // Switch from typing to deleting
+        // switch from typing to deleting
         if (!isDeleting && displayText === fullText) {
             timer = setTimeout(() => {
-                // Scroll to projects section
+                // scroll to projects section to get users
                 if (!hasScrolledToProjects) {
                     const projectsElement = document.getElementById('projects');
                     if (projectsElement) {
                         projectsElement.scrollIntoView({ behavior: 'smooth' });
                         setHasScrolledToProjects(true);
-                    }
-                }
+                    };
+                };
                 setIsDeleting(true);
                 setSpeed(100);
-            }, 5000); // Wait so user can read intro 
+            }, 5000); // wait so the user can read the intro 
         } else if (isDeleting && displayText === '') {
             setIsDeleting(false);
             setLoop(loop + 1);
@@ -62,10 +62,7 @@ export default function Home() {
                     <h2>{displayText}</h2>
                 </div>
             </div>
-
-            <section id='projects'>
-                <AllProjects/>
-            </section>
+            <section id='projects'><AllProjects/></section>
         </div>
     );
-}
+};

@@ -1,9 +1,13 @@
 import React, { useRef, useState } from 'react';
+import "./CSS/footer.css"
+
 import emailjs from '@emailjs/browser';
 import MsgModal from './MsgModal';
+
 import linkedin from '../assets/icons/linkedinlogo.png'
 import github from '../assets/icons/githublogo.png'
-import "./CSS/footer.css"
+
+
 
 export default function Footer ({scrollToTop}) {
     const form = useRef();
@@ -12,7 +16,6 @@ export default function Footer ({scrollToTop}) {
     const serviceKey = process.env.REACT_APP_PUBLIC_KEY;
     const templateKey = process.env.REACT_APP_TEMPLATE_KEY;
     const id = process.env.REACT_APP_ID;
-
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -23,7 +26,7 @@ export default function Footer ({scrollToTop}) {
         }, (error) => {
             console.log(error.text);
         });
-};
+    };
 
     return (
         <div className='footer-cont'>
@@ -33,15 +36,10 @@ export default function Footer ({scrollToTop}) {
                     <h2 className="footer-header">SEND ME AN EMAIL TO GET IN TOUCH</h2>
                     <form className="form"ref={form} onSubmit={sendEmail}>
                         <input type="text" name="user_name" placeholder="Plese enter your name" />
-
                         <input type="email" name="user_email" placeholder="Please enter your email"/>
-
                         <textarea name="message"placeholder="Write your email here :)"/>
-
                         <input className='submit' type="submit" value="SEND" />
-
                     </form>
-
                     <div className="logos-container">
                         <h3> Check these out too: </h3>
                         <a href="https://github.com/evandalmeida">
@@ -51,7 +49,6 @@ export default function Footer ({scrollToTop}) {
                             <img className="linkedin-logo" src={linkedin} alt="linkedin"/>
                         </a>
                     </div>
-                
                 </div>
                 <MsgModal show={show} onHide={() => setShow(false)} /> 
             </div>
@@ -59,5 +56,3 @@ export default function Footer ({scrollToTop}) {
         </div>
     );
 };
-
-
