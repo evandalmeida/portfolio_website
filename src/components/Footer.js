@@ -38,17 +38,17 @@ export default function Footer ({scrollToTop}) {
 
                         <textarea name="message"placeholder="Write your email here :)"/>
 
-                        <input type="submit" value="SEND" />
+                        <input className='submit' type="submit" value="SEND" />
 
                     </form>
 
                     <div className="logos-container">
                         <h3> Check these out too: </h3>
-                        <a href="https://www.linkedin.com/in/evan-d-almeida/">
-                            <img className="linkedin-logo" src={linkedin} alt="linkedin"/>
-                        </a>
                         <a href="https://github.com/evandalmeida">
                             <img className="github-logo" src={github} alt="github"/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/evan-d-almeida/">
+                            <img className="linkedin-logo" src={linkedin} alt="linkedin"/>
                         </a>
                     </div>
                 

@@ -1,4 +1,4 @@
-import pictureOfMe from '../assets/linkedin.jpg'
+import pictureOfMe from '../assets/linkedin.jpeg'
 import './CSS/aboutMe.css'
 import {Skills} from './Skills'
 import {Hobbies} from './Hobbies'
@@ -22,8 +22,10 @@ export default function AboutMe () {
                 </div>
             </div>
 
-            
-            <Skills/>
+            <div className='who-am-i'>
+
+                <Skills/>
+            </div>
             
             <div className='ed-ss'>
 

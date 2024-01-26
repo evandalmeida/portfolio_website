@@ -8,18 +8,19 @@
     gap: 5vw;
     margin: 50px;
     margin-bottom: 10vh;
+
 }
 
 img.profile-pic {
     border-radius: 50%;
-    width: 30%;
+    width: 30vw;
     border: 3px solid white;
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 
 .who-am-i {
     align-items: center;
-    width: 40%;
+    width: 40vw;
     text-align: center;
 }
 
@@ -31,12 +32,12 @@ img.profile-pic {
 
 
 .intro-summary {
-    width: 100%;
+    width: 40vw;
     text-align: center;
     padding: 10px 15px;
     border: 3px solid white;
     border-radius: 20px;
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: 100;
 }
 
@@ -45,12 +46,12 @@ img.profile-pic {
 .skill-bx img, .tool-bx img {
     width: 7vw;
     height: auto;
-
 }
 
 #all-skills-container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 5vh;
 
 }
 
@@ -66,6 +67,10 @@ img.profile-pic {
     text-align: center;
 }
 
+.heading h2 {
+    font-size: 1.8rem;
+}
+
 .skill-name {
     text-align: center;
 }
@@ -74,7 +79,7 @@ img.profile-pic {
     text-align: left;
     padding:10px;
     margin-left: 10vw;
-    font-size: 90px;
+    font-size: 5.5rem;
     letter-spacing: .5vw;
     margin-bottom: 1vh;
 }
@@ -99,12 +104,12 @@ img.profile-pic {
 }
 
 .soft-skills p {
-    font-size: 40px;
+    font-size: 2rem;
 }
 
 .header-ss {
     text-align: center;
-    font-size: 90px;
+    font-size: 5.5rem;
     margin-bottom: 1vh;
     letter-spacing: .5vw;
 }
@@ -127,7 +132,7 @@ img.profile-pic {
 
 .header-ed {
     text-align: center;
-    font-size: 90px;
+    font-size: 5.5rem;
     letter-spacing: .5vw;
 }
 
