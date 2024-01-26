@@ -9,7 +9,7 @@ import theBoys from "../assets/shows/TheBoys.jpg.webp"
 import theOffice from "../assets/shows/TheOffice.jpg"
 
 
-export const Hobbies = () => {
+export default function Hobbies() {
 
     const myShows = [
         <div><img src={barry} alt='Barry'/></div>,
@@ -55,5 +55,5 @@ export const Hobbies = () => {
 
         </div>
 
-    )
+    );
 }

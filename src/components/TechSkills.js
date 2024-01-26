@@ -15,34 +15,34 @@ import mac from '../assets/icons/macos.svg'
 import "./CSS/aboutMe.css"
 
 
-export const Skills = () => {
+export default function TechSkills() {
 
     return (
-        <div id='all-skills-container'>
+        <div className='tech-skills-cont'>
             <div>
-                <h1 className='header' >Techincal Skills</h1>
+                <h1 className='header-tech-skills' >Techincal Skills</h1>
             </div>
 
-            <div className='tech-skills-container'>
-                <div className='heading'>
+            <div className='all-skills-cont'>
+                <div className='tech-skills-heading'>
                     <h2>Front-End</h2>
                     <table className='skills-table'>     
                         <tbody>
                             <tr>
                                 <td>
-                                    <div className="skill-bx">
+                                    <div className="skill-box">
                                         <img src={js} alt="javascript" />
                                         <p className="skill-name">JavaScript</p>
                                     </div>
                                 </td>
                                 <td>
-                                    <div className="skill-bx">
+                                    <div className="skill-box">
                                         <img src={react} alt="React"/>
                                         <p className="skill-name">React</p>
                                     </div>
                                 </td>
                                 <td>
-                                    <div className="skill-bx">
+                                    <div className="spec-box">
                                         <img src={tailwind} alt="tailwind"/>
                                         <p className="skill-name">Tailwind</p>
                                     </div>
@@ -50,19 +50,19 @@ export const Skills = () => {
                             </tr>
                             <tr>
                                 <td>
-                                    <div className="skill-bx">
+                                    <div className="spec-box">
                                         <img src={bootstrap} alt="bootstrap"/>
                                         <p className="skill-name">Bootstrap</p>
                                     </div>
                                 </td>
                                 <td>
-                                    <div className="skill-bx">
+                                    <div className="skill-box">
                                         <img src={html} alt="html"/>
                                         <p className="skill-name">HTML 5</p>
                                     </div>
                                 </td>
                                 <td>
-                                    <div className="skill-bx">
+                                    <div className="skill-box">
                                         <img src={css} alt="css"/>
                                         <p className="skill-name">CSS 3 </p>
                                     </div>
@@ -72,25 +72,25 @@ export const Skills = () => {
                     </table>
                 </div>
 
-                <div className='heading'>
+                <div className='tech-skills-heading'>
                     <h2>Back-End</h2>
                     <table className='skills-table'>
                         <tbody>
                             <tr>
                                 <td>
-                                    <div className="skill-bx">
+                                    <div className="skill-box">
                                         <img src={python} alt="python"/>
                                         <p className="skill-name">Python</p>
                                     </div>
                                 </td>
                                 <td>
-                                    <div className="skill-bx">
+                                    <div className="spec-box">
                                         <img src={flask} alt="Flask"/>
                                         <p className="skill-name">Flask</p>
                                     </div>
                                 </td>
                                 <td>
-                                    <div className="skill-bx">
+                                    <div className="skill-box">
                                         <img src={sql} alt="SQL"/>
                                         <p className="skill-name">SQL</p>
                                     </div>
@@ -101,35 +101,35 @@ export const Skills = () => {
                 </div>
         
             
-                <div className='heading'>
+                <div className='tech-skills-heading'>
                     <h2>Developemntal Skills</h2>
 
                     <table >
                         <tbody>
                             <tr>
                                 <td>
-                                    <div className="tool-bx">
-                                        <img className="tool-icon" src={git} alt="git"/>
+                                    <div className="tool-box">
+                                        <img src={git} alt="git"/>
                                         <p className="skill-name">Git</p>
                                     </div>
                                 </td>
                                 <td>
-                                    <div className="tool-bx">
-                                        <img className="tool-icon" src={json} alt="JWT"/>
+                                    <div className="tool-box">
+                                        <img src={json} alt="JWT"/>
                                         <p className="skill-name">JSON Web Token</p>
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <div className="tool-bx">
-                                        <img className="tool-icon" src={vsCode} alt="vsCode"/>
+                                    <div className="tool-box">
+                                        <img src={vsCode} alt="vsCode"/>
                                         <p className="skill-name">Visual Studio Code</p>
                                     </div>
                                 </td>
                                 <td>
-                                    <div className="tool-bx">
-                                        <img className="tool-icon" src={mac} alt="macOS"/>
+                                    <div className="tool-box">
+                                        <img src={mac} alt="macOS"/>
                                         <p className="skill-name">MacOS</p>
                                     </div>
                                 </td>
@@ -140,5 +140,5 @@ export const Skills = () => {
             </div>
         </div>
 
-    )
+    );
 };

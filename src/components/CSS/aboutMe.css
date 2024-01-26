@@ -1,21 +1,28 @@
 /* ABOUTME.JS */
+#about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-#about-me-intro {
+.about-me-intro {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 5vw;
     margin: 50px;
-    margin-bottom: 10vh;
-
+    margin-bottom: 4vh;
+    margin-top: 1px;
 }
 
-img.profile-pic {
+
+.profile-pic {
     border-radius: 50%;
     width: 30vw;
     border: 3px solid white;
     margin-top: 10vh;
+    
 }
 
 .who-am-i {
@@ -24,69 +31,101 @@ img.profile-pic {
     text-align: center;
 }
 
-
 .who-am-i h1 {
     font-size: 5rem;
     margin-bottom: 1vh;
+    letter-spacing: -6px;
+    transition: transform 0.3s ease;
+    animation: float 3s ease-in-out infinite;
 }
+
+.who-am-i h1:hover {
+    transform: translateY(-5px);
+}
+
 
 
 .intro-summary {
     width: 40vw;
     text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
     padding: 10px 15px;
     border: 3px solid white;
     border-radius: 20px;
-    font-size: 1.5rem;
-    font-weight: 100;
+
+}
+
+.intro-summary h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+
+
 }
 
 
+
 /* SKILL.JS */
-.skill-bx img, .tool-bx img {
+.skill-box img, .tool-box img {
     width: 7vw;
     height: auto;
 }
 
-#all-skills-container {
+.spec-box img {
+    width: 6.2vw;
+    padding: .5vw;
+    height: auto;
+}
+
+.skill-box, .tool-box, .spec-box {
+    margin: 10px;
+}
+
+.skill-box:hover, .tool-box:hover, .spec-box:hover {
+    box-shadow: 0px 0px 10px white;
+    border-radius: 10%;
+}
+
+
+.tech-skills-cont {
     display: flex;
     flex-direction: column;
     margin-bottom: 5vh;
-
 }
 
-.tech-skills-container {
+.all-skills-cont {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;  
+    flex-direction: row; 
+    gap: 5vw;
 }
 
-.heading {
+.tech-skills-heading {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.heading h2 {
-    font-size: 1.8rem;
+.tech-skills-heading h2 {
+    font-size: 1.5rem;
 }
 
-.skill-name {
+.tool-box p, .skill-box p, .spec-box p {
     text-align: center;
+    padding: 10px;
 }
 
-.header {
-    text-align: left;
-    padding:10px;
-    margin-left: 10vw;
+.header-tech-skills {
+    text-align: center;
     font-size: 5.5rem;
-    letter-spacing: .5vw;
-    margin-bottom: 1vh;
+    letter-spacing: -6px;
+    margin-bottom: 1px;
+    padding-left: 6w;
 }
 
 .skills-table {
     justify-self: center;
-    width: 10vw;
+    width: 20vw;
 }
 
 
@@ -100,40 +139,39 @@ img.profile-pic {
 }
 
 .soft-skills p {
+    font-size: 1.5rem;
     font-weight: bolder;
 }
 
-.soft-skills p {
-    font-size: 2rem;
-}
-
-.header-ss {
+.header-ss{
     text-align: center;
     font-size: 5.5rem;
-    margin-bottom: 1vh;
-    letter-spacing: .5vw;
+    letter-spacing: -6px;
+    margin-bottom: 1px;
 }
-
 
 .BE-happy {
     margin-right: 15px;
 }
 
-.ed-ss {
+#ed-ss {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
 }
+
+
+.soft-skills-cont, .ed-cont {
+    width: 50vw;
+}
+
 
 /* ED */
-.ed {
-    margin-top: 5vh;
-}
-
 .header-ed {
     text-align: center;
     font-size: 5.5rem;
-    letter-spacing: .5vw;
+    letter-spacing: -6px;
+    padding-left: 6vw;
+    margin-bottom: 7vh;
 }
 
 .schools {
@@ -145,24 +183,24 @@ img.profile-pic {
 .schools img {
     width: 10vw;
     height: auto;
+    padding-left: 8vw;
 }
 
 .schools h2 {
     margin-left: 20px;
     padding: auto;
-    font-size: 2rem;
+    font-size: 1.35rem;
 }
 
 .schools h3 {
     margin-left: 20px;
     padding: auto;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 
-
 /* HOBBIES */
-
 .show-car p {
     color: white;
 }
@@ -170,7 +208,6 @@ img.profile-pic {
     width: 10vw;
     height: auto;
 }
-
 
 
 /* WORK */

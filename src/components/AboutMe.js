@@ -1,16 +1,15 @@
 import pictureOfMe from '../assets/linkedin.jpeg'
 import './CSS/aboutMe.css'
-import {Skills} from './Skills'
-import {Hobbies} from './Hobbies'
-import BEHappy from '../assets/BE-happy.png'
-import flatrion from '../assets/flatiron.png'
-import bing from '../assets/bing.png'
+import TechSkills from './TechSkills'
+import Hobbies from './Hobbies'
+import Education from './Education'
+import SoftSkills from './SoftSkills'
 
 export default function AboutMe () {
 
     return (
-        <div className='about-me'>
-            <div id='about-me-intro'>
+        <div id='about-me'>
+            <div className='about-me-intro'>
                 <img className="profile-pic" src={pictureOfMe} alt='profile'/>
                 <div className='who-am-i'>
                     <h1>Who am I?</h1>
@@ -22,52 +21,19 @@ export default function AboutMe () {
                 </div>
             </div>
 
-            <div className='who-am-i'>
-
-                <Skills/>
-            </div>
+            <div id='tech-skills'><TechSkills/></div>
             
-            <div className='ed-ss'>
-
-                <div>
-                    <h1 className='header-ed'>Education</h1>
-                    <div className= "ed">
-                        <div className='schools'>
-                            <img className="flatiron" src={flatrion} alt="flatiron"/>
-                            <h2>Full-Stack Software Engineering Program</h2>
-                        </div>
-                        <div className='schools'>
-                            <img className="bing"src={bing} alt="binghamton logo"/>
-                            <div className="bing-text">
-                                <h2>Binghamton University, SUNY</h2>
-                                <h3>Bachelor of Science in Neuroscience</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h1 className='header-ss'>Soft Skills</h1>
-                    <div className= "soft-skills">
-                        <div className="soft-skills-text">
-                            <p>Team Player</p>
-                            <p>Problem-Solver</p>
-                            <p>Innovative</p>
-                        </div>
-                        <img className='BE-happy' src={BEHappy} alt='BE-happy'/>
-                        <div className= "soft-skills-text">
-                            <p>Detail Oriented</p>
-                            <p>Ambitious</p>
-                            <p>Critical Thinker</p>
-                        </div>
-                    </div>
-                </div>
+            <div id='ed-ss'>
+                <Education/>
+                <SoftSkills/>
             </div>
          
-            <div>
-                <h1 className='header'>Work Experience</h1>
+            <div id='work'>
+                <h1 className='work-header'>Work Experience</h1>
             </div>
-            <Hobbies/>
+            <div>
+                <Hobbies/>
+            </div>
         </div>
     )
 }
