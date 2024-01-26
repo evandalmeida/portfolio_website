@@ -1,7 +1,13 @@
 .resume-header {
-    font-size: 3rem;
-    letter-spacing: .5vw;
+    font-size: 4rem;
+    letter-spacing: -px;
     margin-bottom: 1vh;
+    text-shadow:         
+        0 0 5px white,
+        0 0 10px white,
+        0 0 20px white,
+        0 0 40px white;
+    color: black;
 }
 
 .resume-container {
@@ -32,17 +38,25 @@
 }
 
 .resume-ty {
-    font-size: 1.7rem;
-    width: 30vw;
+    width: 100%;
     text-align: center;
     margin-bottom: 5vh;
     margin-top: 0px;
 }
 
+.resume-end-text h2 {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+
 .download-button {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.resume-end-text a {
     text-decoration: none;
 }
 

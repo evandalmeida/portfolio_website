@@ -20,8 +20,13 @@
 .profile-pic {
     border-radius: 50%;
     width: 30vw;
-    border: 3px solid white;
-    margin-top: 10vh;
+    border: .5px solid white;
+    box-shadow: 
+        0 0 5px white,
+        0 0 10px white,
+        0 0 20px white,
+        0 0 40px white;
+    margin-top: 7vh;
     
 }
 
@@ -29,52 +34,69 @@
     align-items: center;
     width: 40vw;
     text-align: center;
+    transition: transform 0.3s ease;
+    animation: float 3s ease-in-out infinite;
+    padding-top: 5vh;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
 }
 
 .who-am-i h1 {
     font-size: 5rem;
     margin-bottom: 1vh;
     letter-spacing: -6px;
-    transition: transform 0.3s ease;
-    animation: float 3s ease-in-out infinite;
+    text-shadow:    
+        0 0 1px black,     
+        0 0 5px orange,
+        0 0 10px orange,
+        0 0 20px orange,
+        0 0 40px orange;
 }
 
-.who-am-i h1:hover {
-    transform: translateY(-5px);
-}
+
 
 
 
 .intro-summary {
     width: 40vw;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 400;
     padding: 10px 15px;
-    border: 3px solid white;
     border-radius: 20px;
-
 }
 
 .intro-summary h2 {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 400;
-
-
+    text-shadow:  
+    0 0 1px black,         
+    0 0 5px #00bfff,
+    0 0 10px #00BFFF,
+    0 0 20px #00BFFF,
+    0 0 40px #00BFFF;
 }
 
 
 
-/* SKILL.JS */
+/* TECHSKILL.JS */
+.all-skills-cont {
+    display: flex;
+    flex-direction: row; 
+    gap: 2vw;
+    justify-content: left;
+}
+
 .skill-box img, .tool-box img {
     width: 7vw;
     height: auto;
+    padding: .3vw;
 }
 
 .spec-box img {
     width: 6.2vw;
-    padding: .5vw;
+    padding: .6vw;
     height: auto;
 }
 
@@ -83,8 +105,12 @@
 }
 
 .skill-box:hover, .tool-box:hover, .spec-box:hover {
-    box-shadow: 0px 0px 10px white;
+    box-shadow: 0px 0px 40px white;
     border-radius: 10%;
+    text-shadow: 
+        0 0 2px black,
+        0 0 4px white,
+        0 0 6px white;
 }
 
 
@@ -94,11 +120,7 @@
     margin-bottom: 5vh;
 }
 
-.all-skills-cont {
-    display: flex;
-    flex-direction: row; 
-    gap: 5vw;
-}
+
 
 .tech-skills-heading {
     display: flex;
@@ -107,7 +129,10 @@
 }
 
 .tech-skills-heading h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    text-shadow: 
+    0 0 1px black,
+    0 0 3px white,
 }
 
 .tool-box p, .skill-box p, .spec-box p {
@@ -115,12 +140,18 @@
     padding: 10px;
 }
 
+
+
 .header-tech-skills {
     text-align: center;
     font-size: 5.5rem;
     letter-spacing: -6px;
     margin-bottom: 1px;
-    padding-left: 6w;
+    padding-left: 2vw;
+    text-shadow: 
+        0 0 2px black,
+        0 0 4px white,
+        0 0 6px white;
 }
 
 .skills-table {
@@ -143,11 +174,27 @@
     font-weight: bolder;
 }
 
+.soft-skills-text-1:hover {
+    transform: scale(1.45); 
+    transition: transform 0.9s ease-in-out;
+}
+
+.soft-skills-text-2:hover {
+    transform: scale(1.45); 
+    transition: transform 0.9s ease-in-out;
+
+}
+
+
 .header-ss{
     text-align: center;
     font-size: 5.5rem;
     letter-spacing: -6px;
     margin-bottom: 1px;
+    text-shadow: 
+        0 0 2px black,
+        0 0 4px white,
+        0 0 6px white;
 }
 
 .BE-happy {
@@ -172,6 +219,10 @@
     letter-spacing: -6px;
     padding-left: 6vw;
     margin-bottom: 7vh;
+    text-shadow: 
+        0 0 2px black,
+        0 0 4px white,
+        0 0 6px white;
 }
 
 .schools {
@@ -199,6 +250,30 @@
     font-weight: 500;
 }
 
+.bing-text h2:hover, .bing-text h3:hover {
+    text-shadow: 
+        0 0 5px #00FF00,
+        0 0 10px #00FF00,
+        0 0 20px #00FF00, 
+        0 0 40px #00FF00,
+        0 0 80px #00FF00;
+}
+
+#flatiron h2:hover {
+
+    text-shadow: 
+        0 0 5px #00BFFF,
+        0 0 10px #00BFFF,
+        0 0 20px #00BFFF,
+        0 0 40px #00BFFF,
+        0 0 80px #00BFFF; 
+}
+
+.schools img {
+    width: 10vw;
+    height: auto;
+    padding-left: 8vw;
+}
 
 /* HOBBIES */
 .show-car p {

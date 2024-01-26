@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Courier New', monospace;
+    font-family: 'Typeface', sans-serif;
 }
 .intro {
     display: flex;
@@ -34,8 +34,10 @@
 
 #home-div h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.95rem;
     margin-top: 1vh;
+    font-weight: 400;
+    font-family: 'Typeface', monospace;
 }
 
 .main-div {

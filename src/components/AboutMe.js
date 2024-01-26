@@ -31,7 +31,7 @@ export default function AboutMe () {
             <div id='work'>
                 <h1 className='work-header'>Work Experience</h1>
             </div>
-            <div>
+            <div id='hobbies'>
                 <Hobbies/>
             </div>
         </div>
