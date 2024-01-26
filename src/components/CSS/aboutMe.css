@@ -275,16 +275,100 @@
     padding-left: 8vw;
 }
 
-/* HOBBIES */
-.show-car p {
-    color: white;
-}
-.carousel img {
-    width: 10vw;
-    height: auto;
-}
 
 
 /* WORK */
 
 
+
+.work-header{
+    text-align: center;
+    font-size: 5.5rem;
+    letter-spacing: -6px;
+    margin-bottom: 7vh;
+    text-shadow: 
+        0 0 2px black,
+        0 0 4px white,
+        0 0 6px white;
+}
+
+
+/* HOBBIES */
+.hobbies {
+    display: flex;
+    align-items: center;
+    flex-direction: column ;
+}
+
+.hobbies-cont {
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hobbies-cont h2 {
+    padding: 0rem .1rem 0rem .5rem;
+    text-align: left;
+}
+
+.carousel-cont{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-cont h1 {
+    margin-top: 1px;
+}
+
+.carousel-cont img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.header-hobbies {
+    text-align: center;
+    font-size: 5.5rem;
+    letter-spacing: -6px;
+    margin-bottom: 1px;
+    text-shadow: 
+        0 0 2px black,
+        0 0 4px white,
+        0 0 6px white;
+}
+
+.button-p {
+    transform: rotate(-45deg);
+    height: 2rem;
+    width: 2rem;
+    background-color: rgba(0, 0, 0, 0.114);
+    border: none;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    cursor: pointer;
+}
+
+.button-n {
+    transform: rotate(45deg);
+    height: 2rem;
+    width: 2rem;
+    background-color: rgba(0, 0, 0, 0.114);
+    border: none;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    cursor: pointer;
+}
+
+.hi {
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+}
+
+.button-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

@@ -1,59 +1,67 @@
-import Carousel from 'react-multi-carousel';
 import './CSS/aboutMe.css'
-import barry from "../assets/shows/Barry.jpeg"
-import hh from "../assets/shows/HouseHunters.jpeg"
+import React, { useState} from 'react';
+
+// SHOWS
+import barry from "../assets/shows/Barry.jpg"
+import hh from "../assets/shows/HouseHunters.jpg"
 import howItsMade from "../assets/shows/HowItsMade.jpg"
 import invincible from "../assets/shows/Invincible.jpg"
 import sharkTank from "../assets/shows/SharkTank.jpg"
-import theBoys from "../assets/shows/TheBoys.jpg.webp"
+import theBoys from "../assets/shows/TheBoys.jpg.png"
 import theOffice from "../assets/shows/TheOffice.jpg"
+// import BECycle from "../assets/BE-cycle.jpg"
+// import BERunning from "../assets/BE-running.jpg"
+// import BEEating from "../assets/BE-eating.jpg"
+// import BEMusic from "../assets/BE-music.jpg"
 
+
+const showList = [barry, hh, howItsMade, invincible, sharkTank, theBoys, theOffice];
 
 export default function Hobbies() {
+    const [current, setCurrent] = useState(0);
 
-    const myShows = [
-        <div><img src={barry} alt='Barry'/></div>,
-        <div><img src={hh} alt='house hunters'/></div>,
-        <div><img src={howItsMade} alt='how its made'/></div>,
-        <div><img src={invincible} alt='invincble'/></div>,
-        <div><img src={sharkTank} alt='shark tank'/></div>,
-        <div><img src={theBoys} alt='the boys'/></div>,
-        <div><img src={theOffice} alt='the office'/></div>,
-    ]
+    const nextShow = () => {
+        setCurrent(current === showList.length - 1 ? 0 : current + 1);
+    };
 
-    const responsive = {
-        desktop: {
-        breakpoint: { max: 3000, min: 1024 },
-        items: 1,
-        },
-        tablet: {
-        breakpoint: { max: 1024, min: 464 },
-        items: 1,
-        },
-        mobile: {
-        breakpoint: { max: 464, min: 0 },
-        items: 1,
-        },
+    const prevShow = () => {
+        setCurrent(current === 0 ? showList.length - 1 : current - 1);
     };
 
     return (
-        <div className='intrests'>
-
-            <div className='hobbies'>
-
-            </div>
-
-            <div className='show-car'>
-                <p>
-                    When I'm not coding or cycling, I like to watch these shows:
-                </p>
-                <div>
-                    <Carousel responsive={responsive} infinite={true} className = "carousel">{myShows}</Carousel>
+        <div className='hobbies'>
+            <h1 className='header-hobbies' >Hobbies & Interests</h1>
+            <div>
+                <div className='hi'>
+                    <div className='hobbies-cont'>
+                        <div>
+                            {/* <h2>Cycling</h2>
+                            <img src={BECycle} alt='cycling'/>
+                        </div>
+                        <div>
+                            <h2>Running</h2>
+                            <img src={BERunning} alt='runnning'/>
+                        </div>
+                        <div>
+                            <h2>Trying NEW Food</h2>
+                            <img src={BEEating} alt='eating'/>
+                        </div>
+                        <div>
+                            <h2>Live Music</h2>
+                            <img src={BEMusic} alt='music'/> */}
+                        </div>
+                    </div>
+                    <div className='carousel-cont'>
+                        <p>When I'm not coding or cycling, I like to watch these shows:</p>
+                        <div className='button-cont'>
+                            <button className='button-p' onClick={prevShow}></button>
+                                <img style={{ width: '20vw', height: 'auto', overflow:'hidden'}} src={showList[current]} alt='Show' />
+                            <button className='button-n' onClick={nextShow}></button>
+                        </div>
+                        <h1>my favorite shows</h1>
+                    </div>
                 </div>
             </div>
-
-
         </div>
-
     );
 }
