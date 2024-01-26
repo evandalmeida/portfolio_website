@@ -9,9 +9,9 @@ import invincible from "../assets/shows/Invincible.jpg"
 import sharkTank from "../assets/shows/SharkTank.jpg"
 import theBoys from "../assets/shows/TheBoys.jpg.png"
 import theOffice from "../assets/shows/TheOffice.jpg"
-// import BECycle from "../assets/BE-cycle.jpg"
+import BECycle from "../assets/BE-cycling.PNG"
 // import BERunning from "../assets/BE-running.jpg"
-// import BEEating from "../assets/BE-eating.jpg"
+import BEEating from "../assets/BE-eating.png"
 // import BEMusic from "../assets/BE-music.jpg"
 
 
@@ -34,25 +34,22 @@ export default function Hobbies() {
             <div>
                 <div className='hi'>
                     <div className='hobbies-cont'>
-                        <div>
-                            {/* <h2>Cycling</h2>
-                            <img src={BECycle} alt='cycling'/>
+                        <div className='hobby-img'>
+                            <h2>Cycling</h2>
+                            <img style={{ width:'7vw', height:'auto'}} src={BECycle} alt='cycling'/>
                         </div>
                         <div>
                             <h2>Running</h2>
-                            <img src={BERunning} alt='runnning'/>
                         </div>
-                        <div>
+                        <div className='hobby-img'>
                             <h2>Trying NEW Food</h2>
-                            <img src={BEEating} alt='eating'/>
+                            <img style={{ width:'5vw', height:'auto'}} src={BEEating} alt='eating'/>
                         </div>
                         <div>
                             <h2>Live Music</h2>
-                            <img src={BEMusic} alt='music'/> */}
                         </div>
                     </div>
                     <div className='carousel-cont'>
-                        <p>When I'm not coding or cycling, I like to watch these shows:</p>
                         <div className='button-cont'>
                             <button className='button-p' onClick={prevShow}></button>
                                 <img style={{ width: '20vw', height: 'auto', overflow:'hidden'}} src={showList[current]} alt='Show' />

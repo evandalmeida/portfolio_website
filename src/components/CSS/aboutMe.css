@@ -144,7 +144,7 @@
 
 .header-tech-skills {
     text-align: center;
-    font-size: 5.5rem;
+    font-size: 5rem;
     letter-spacing: -6px;
     margin-bottom: 1px;
     padding-left: 2vw;
@@ -188,7 +188,7 @@
 
 .header-ss{
     text-align: center;
-    font-size: 5.5rem;
+    font-size: 5rem;
     letter-spacing: -6px;
     margin-bottom: 1px;
     text-shadow: 
@@ -199,6 +199,8 @@
 
 .BE-happy {
     margin-right: 15px;
+    width: 13vw;
+    height: auto;
 }
 
 #ed-ss {
@@ -215,7 +217,7 @@
 /* ED */
 .header-ed {
     text-align: center;
-    font-size: 5.5rem;
+    font-size: 5rem;
     letter-spacing: -6px;
     padding-left: 6vw;
     margin-bottom: 7vh;
@@ -329,6 +331,8 @@
 .jobs {
     display: flex;
     flex-direction: column;
+    width: 50vw;
+    margin-left: 10vw;
 }
 
 #work {
@@ -338,7 +342,7 @@
 
 .work-header{
     text-align: center;
-    font-size: 5.5rem;
+    font-size: 4rem;
     letter-spacing: -6px;
     margin-bottom: 1vh;
     text-shadow: 
@@ -348,8 +352,7 @@
 }
 
 .job-cont {
-    width: 50vw;
-    margin-left: 10vw;
+    width: 100%;
 }
 
 .job-cont p {
@@ -372,9 +375,13 @@
     flex-direction: column ;
 }
 
+.hobby-img {
+    display: flex;
+    flex-direction: row;
+}
+
+
 .hobbies-cont {
-    border: 1px solid white;
-    border-radius: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -398,11 +405,18 @@
 .carousel-cont img {
     height: 200px;
     object-fit: cover;
+    margin: 1rem;
+    border: .5px solid white;
+    box-shadow: 
+        0 0 5px white,
+        0 0 10px white,
+        0 0 20px white,
+        0 0 40px white;
 }
 
 .header-hobbies {
     text-align: center;
-    font-size: 5.5rem;
+    font-size: 5rem;
     letter-spacing: -6px;
     margin-bottom: 1px;
     text-shadow: 
@@ -445,3 +459,8 @@
     align-items: center;
 }
 
+
+#work-hobbies {
+    display: flex;
+    flex-direction: row;
+}
