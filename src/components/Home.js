@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Projects from './Projects';
+import AllProjects from './AllProjects';
 
 import './CSS/home.css'
 
@@ -10,21 +10,23 @@ export default function Home() {
     const [speed, setSpeed] = useState(100);
     const [loop, setLoop] = useState(0);
 
+
     useEffect(() => {
         let timer;
 
-        // Typing effect
+        // typing effect
         if (!isDeleting && displayText.length < fullText.length) {
             timer = setTimeout(() => {
                 setDisplayText(fullText.slice(0, displayText.length + 1));
                 setSpeed(50);
             }, speed);
         } 
-        // Deleting effect
+        // deleting effect
         else if (isDeleting) {
             timer = setTimeout(() => {
                 setDisplayText(fullText.slice(0, displayText.length - 1));
-                setSpeed(30);
+                setSpeed(30);ç
+
             }, speed);
         }
 
@@ -33,7 +35,7 @@ export default function Home() {
             timer = setTimeout(() => {
                 setIsDeleting(true);
                 setSpeed(100);
-            }, 10000); // wait so user can read intro 
+            }, 5000); // wait so user can read intro 
         } else if (isDeleting && displayText === '') {
             setIsDeleting(false);
             setLoop(loop + 1);
@@ -45,13 +47,17 @@ export default function Home() {
 
     return (
         <div id='home-div'>
-            <div className='intro'>
-                <h1>Hi! I'm Evan[ee-væn],</h1>
+            <div className='main-div'>
+                <div className='intro'>
+                    <h1>Hi! I'm Evan[ee-væn],</h1>
+                </div>
+                <div className='type-text'>
+                    <h2>{displayText}</h2>
+                </div>
             </div>
-            <h2>{displayText}</h2>
 
             <section id='projects'>
-                <Projects/>
+                <AllProjects/>
             </section>
         </div>
     

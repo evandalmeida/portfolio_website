@@ -3,12 +3,11 @@ import {HHMDProject} from './Projects/HHMDProject'
 import {MVProject} from './Projects/MVProject'
 import './CSS/projects.css'
 
-export default function Projects(){
+export default function AllProjects(){
 
     return (
-        <div id='projects-cont'>
-            <h1 className='projects-header'>MY PROJECTS</h1>
-            <div className='showcase-projects'>
+        <div id='all-projects-cont'>
+            <div className='showcase'>
                 <HHMDProject/>
                 <MVProject/>
             </div>

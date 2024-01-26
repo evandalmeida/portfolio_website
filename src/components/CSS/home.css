@@ -29,14 +29,27 @@
 .intro h1 {
     font-size: 4rem;
     letter-spacing: 1px;
+    margin-bottom: 1vh;
 }
 
 
 #home-div h2 {
     text-align: center;
-    width: 50%;
-    font-size: 30px;
-    min-height: 10vh;
-    margin-bottom: 14vh;
+    font-size: 2rem;
+    margin-top: 1vh;
 }
 
+.main-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.type-text {
+    min-height: 30vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+}

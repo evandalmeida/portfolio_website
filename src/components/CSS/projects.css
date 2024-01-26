@@ -1,22 +1,57 @@
+#all-projects-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    justify-content: center;
+    padding-top: 7em;
+    width: 90vw;
+    
+    font-family: 'Helvetica', sans-serif;
+}
+
+#all-projects-cont .showcase-projects {
+    align-items: center;
+
+}
+
+
+.showcase-projects {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3vw;
+}
+
+
 #projects-cont {
     display: flex;
     flex-direction: column;
     gap: 5vh;
     justify-content: center;
-    font-family: 'Avenir';
-    padding-top: 10em;
+    padding-top: 7em;
+    width: 90vw;
+    
+    font-family: 'Helvetica', sans-serif;
 }
 
 #projects-cont .showcase {
     align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3vw;
 }
+
 
 .showcase {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    justify-content: center;
     gap: 3vw;
 }
+
+
 
 .BTP h1, .HHMDP h1, .MVP h1 {
     text-align: left;
@@ -31,7 +66,7 @@
 }
 
 .HHMDP img, .MVP img {
-    width: 40vw;
+    width: 35vw;
     height: auto;
     border-radius: 10px;
 }
@@ -70,7 +105,7 @@
 .demo-cont {
     border: 2px solid white;
     border-radius: 20px;
-    padding: 4em;
+    padding: 3em;
 }
 
 
@@ -84,12 +119,20 @@
     background-color: black;
     color: white;
     padding: 10px 15px;
-    margin: 10px auto 10px;
     border: 2px solid #ddd;
     border-radius: 10px;
     cursor: pointer;
     width: 5vw;
     letter-spacing: 3px;
     font-size:1rem;
-    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-decoration: none;
+}
+
+.projects-header {
+    font-size: 3rem;
+    letter-spacing: -1px;
+    margin-bottom: 1vh;
 }
