@@ -25,7 +25,13 @@ export default function Home() {
         else if (isDeleting) {
             timer = setTimeout(() => {
                 setDisplayText(fullText.slice(0, displayText.length - 1));
-                setSpeed(30);ç
+                setSpeed(30);
+
+            // scroll down after typing out statement
+            const projectsElement = document.getElementById('projects');
+            if (projectsElement) {
+                projectsElement.scrollIntoView({ behavior: 'smooth' });
+            }
 
             }, speed);
         }
