@@ -5,7 +5,6 @@
     justify-content: center;
     padding-top: 7em;
     width: 90vw;
-    
     font-family: 'Helvetica', sans-serif;
 }
 
@@ -29,9 +28,7 @@
     flex-direction: column;
     gap: 5vh;
     justify-content: center;
-    padding-top: 7em;
     width: 90vw;
-    
     font-family: 'Helvetica', sans-serif;
 }
 
@@ -118,9 +115,10 @@
 .github-button {
     background-color: black;
     color: white;
-    padding: 10px 15px;
-    border: 2px solid #ddd;
+    padding: 12px 1px 10px 3px;
+    border: 3px solid #ddd;
     border-radius: 10px;
+    margin: 2vh 0 1vh;
     cursor: pointer;
     width: 5vw;
     letter-spacing: 3px;
@@ -135,4 +133,18 @@
     font-size: 3rem;
     letter-spacing: -1px;
     margin-bottom: 1vh;
+}
+
+.desc-title {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    width: 100%;
+}
+
+.desc-title-phone {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    width: 100%;
 }

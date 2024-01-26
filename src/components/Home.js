@@ -63,6 +63,7 @@ export default function Home() {
             </div>
 
             <section id='projects'>
+                
                 <AllProjects/>
             </section>
         </div>
