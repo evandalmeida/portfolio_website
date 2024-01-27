@@ -50,8 +50,8 @@ export default function Footer ({scrollToTop}) {
                         </a>
                     </div>
                 </div>
-                <MsgModal show={show} onHide={() => setShow(false)} /> 
             </div>
+                <MsgModal show={show} onHide={() => setShow(false)} /> 
             <button className='top' onClick={scrollToTop}> BACK TO THE TOP </button>
         </div>
     );
