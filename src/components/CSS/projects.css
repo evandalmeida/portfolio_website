@@ -157,6 +157,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
         margin-bottom: 12vh;
     }
 
@@ -180,22 +181,11 @@
     }
 
     .github-button {
-        background-color: black;
-        color: white;
-        padding: 12px 1px 10px 3px;
-        border: 3px solid #ddd;
-        border-radius: 10px;
-        margin: 2vh 0 1vh;
-        cursor: pointer;
         width: 20vw;
-        letter-spacing: 3px;
         font-size: 1rem;
-
     }
 
     .desc-title {
-        display: flex;
-        flex-direction: row;
         width: 100%;
         justify-content: space-between;
         align-items: center;
@@ -213,7 +203,6 @@
     .BTP video {
         width: 100%;
         height: auto;
-        border-radius: 10px;
     }
     
     .BTP .description {
@@ -232,6 +221,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         gap: 1vw;
         width: 100%;
     }
@@ -256,10 +246,4 @@
     #projects-cont {
         gap: 1vh;
     }
-
-}
-
-
- /* RESPONSIVENESS TABLET */
-@media (max-width: 768px) {
-}
+};
