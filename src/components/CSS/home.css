@@ -56,3 +56,40 @@
     margin-top: 3.3em;
     padding-top: 1rem;
 }
+
+
+/* RESPONSIVENESS MOBILE */ 
+@media (max-width: 600px) {
+    .intro h1 {
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        margin-bottom: 1vh;
+    }
+    
+    #home-div h2 {
+        text-align: center;
+        font-size: 1.3rem;
+        margin-top: 1vh;
+        font-weight: 400;
+    }
+
+    .type-text {
+        min-height: 40vh;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        width: 90vw;
+    }
+}
+
+
+ /* RESPONSIVENESS TABLET */
+@media (max-width: 768px) {
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .type-text h2 {
+        font-size: 1rem;
+    }
+}
