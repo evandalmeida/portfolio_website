@@ -21,8 +21,8 @@ export default function NavBar({ scrollToTop }) {
     };
 
     const handleLinkClick = (action) => {
-        action(); // Execute scrollToTop or scrollToBottom
-        setMobileMenuOpen(false); // Close the mobile menu
+        action(); 
+        setMobileMenuOpen(false); 
     };
 
     useEffect(() => {

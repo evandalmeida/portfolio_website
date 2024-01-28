@@ -69,8 +69,45 @@
     margin-top: 2px;
     font-size: 1.5rem;
     text-align: center;
+    color: white;
 }
 
-.download-button h2:visited {
-    color: greenyellow;
-}
+
+
+/* RESPONSIVENESS MOBILE */ 
+@media (max-width: 600px) {
+
+    .resume-header {
+        font-size: 2.5rem;
+        letter-spacing: -1px;
+        margin-bottom: 1vh;
+        text-align: center;
+    }
+
+    .resume-image {
+        width: 90vw;
+        margin-bottom: 0px;
+    }
+
+    .resume-ty {
+        width: 90vw;
+    }
+
+    .resume-download {
+        margin-left: 2vw;
+    }
+
+    .download-button {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    .download-img {
+        width: 20px;
+        height: auto;
+        padding: 0px;
+    }
+    
+};
