@@ -129,6 +129,12 @@
     font-size: 3rem;
     letter-spacing: -1px;
     margin-bottom: 1vh;
+    text-shadow:         
+        0 0 5px white,
+        0 0 10px white,
+        0 0 20px white,
+        0 0 40px white;
+    color: black;
 }
 
 .desc-title {
@@ -148,8 +154,6 @@
 .desc-title a, .desc-title-phone a {
     text-decoration: none;
 }
-
-
 
 /* RESPONSIVENESS MOBILE */ 
 @media (max-width: 600px) {
@@ -190,7 +194,6 @@
         width: 20vw;
         letter-spacing: 3px;
         font-size: 1rem;
-
     }
 
     .desc-title {
@@ -200,7 +203,6 @@
         justify-content: space-between;
         align-items: center;
     }
-
 
     .BTP {
         display: flex;
@@ -226,7 +228,6 @@
     .BTP p {
         text-align: left;
     }
-    
 
     .desc-title-phone {
         display: flex;
@@ -236,7 +237,6 @@
         width: 100%;
     }
 
-
     .showcase-projects {
         align-items: center;
         display: flex;
@@ -244,7 +244,6 @@
         justify-content: center;
         margin-top: 3vh;
     }
-
 
     .projects-header {
         font-size: 2.5rem;
