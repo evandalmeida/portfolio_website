@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-items: center;
 }
 
 .about-me-intro {
@@ -440,6 +441,12 @@
     align-items: center;
 }
 
+.button-cont img {
+    width: 13vw;
+    height: auto;
+
+}
+
 #work-hobbies {
     display: flex;
     flex-direction: row;
@@ -465,4 +472,153 @@
 
 .live-music {
     letter-spacing: 1px;
+}
+
+.BE-eating {
+    width: 5vw;
+    height:auto;
+    padding: 1px 1px 1px 3px;
+}
+
+.BE-cycling {
+    width: 5vw;
+    height: auto;
+
+}
+
+
+/* RESPONSIVENESS MOBILE */ 
+@media (max-width: 600px) {
+    .about-me-intro {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .who-am-i {
+        width: 95vw;
+        padding-top: 1px;
+    }
+    
+    .who-am-i h1 {
+        font-size: 3rem;
+        margin-bottom: 1vh;
+        letter-spacing: -1px;
+        margin-top: 1vh;
+    }
+
+    .intro-summary {
+        width: 95%;
+    }
+
+    .intro-summary h2 {
+        font-size: .9rem;
+    }
+
+    .all-skills-cont, #work-hobbies {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .tech-skills-heading {
+        align-items: center;
+    }
+
+    .header-tech-skills, .header-ed, .header-ss, .header-hobbies, .header-hobbies, .work-header{
+        font-size: 3.5rem;
+        letter-spacing: -2px;
+        margin-bottom: 1px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .work-header {
+        margin-top: 5vh;
+    }
+
+    .skill-box img, .tool-box img {
+        width: 20vw;
+        height: auto;
+        padding: .3vw;
+    }
+    
+    .spec-box img {
+        width: 17vw;
+        padding: .6vw;
+        height: auto;
+    }
+
+    #ed-ss, #work, #hobbies, .hobbies {
+        display: flex;
+        flex-direction: column;
+        width: 95vw;
+    }
+
+    #ed-ss, .hobbies {
+        gap: 5vh;
+    }
+
+    .ed-cont, .soft-skills-cont {
+        width: 100%;
+        align-items: center;
+    }
+
+    .BE-happy {
+        margin-right: 2vw;
+        width: 30vw;
+        height: auto;
+    }
+
+    .soft-skills-text p {
+        font-size: 1rem;
+    }
+
+    .job-header h2 {
+        font-size: .55rem;
+    }
+
+    .job-title h3 {
+        font-size: .6rem;
+    }
+
+    .jobs {
+        width: 95%;
+    }
+
+    .button-cont img {
+        width: 50vw;
+        height: auto;
+    }
+
+    .hobbies-cont {
+        width: 80vw;
+        align-items: center;
+    }
+
+    .BE-eating {
+        width: 30vw; 
+    }
+
+    .BE-cycling {
+        width: 25vw;
+    }
+
+    .profile-pic {
+        margin-top: 4vh;
+    }
+
+    .schools img {
+        width: 20vw;
+    }
+
+    #flatiron h2 {
+        font-size: 1rem;
+    }
+
+    .bing-text h2 {
+        font-size: 1rem;
+    }
+
+    .bing-text h3 {
+        font-size: .8rem;
+    }
 }

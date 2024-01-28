@@ -13,7 +13,7 @@ export default function Education() {
             <div className= "ed">
                 <div id='flatiron' className='schools'>
                     <div className="flatiron">
-                        <img  src={flatrion} alt="flatiron"/>
+                        <img src={flatrion} alt="flatiron"/>
                     </div>
                     <h2>Full-Stack Software Engineering Program</h2>
                 </div>

@@ -33,7 +33,7 @@ export default function Hobbies() {
                 <h1 className='header-shows' >Favorite Shows</h1>
                 <div className='button-cont'>
                     <button className='button-p' onClick={prevShow}></button>
-                        <img style={{ width: '13vw', height: 'auto', overflow:'hidden'}} src={showList[current]} alt='Show' />
+                        <img src={showList[current]} alt='Show' />
                     <button className='button-n' onClick={nextShow}></button>
                 </div>
             </div>
@@ -41,7 +41,7 @@ export default function Hobbies() {
             <div>
                 <div className='hobbies-cont'>
                     <div className='hobby-img'>
-                        <img style={{ width:'5vw', height:'auto'}} src={BECycle} alt='cycling'/>
+                        <img className="BE-cycling" src={BECycle} alt='cycling'/>
                         <div className='running'>
                             <h2>Cycling</h2>
                             <h2>Running</h2>
@@ -52,7 +52,7 @@ export default function Hobbies() {
                             <h2 className='live-music'>Live Music</h2>
                             <h2>Trying NEW Food</h2>
                         </div>
-                        <img style={{ width:'5vw', height:'auto', padding:'1px 1px 1px 3px'}} src={BEEating} alt='eating'/>
+                        <img className='BE-eating' src={BEEating} alt='eating'/>
                     </div>
                 </div>
             </div>
