@@ -153,3 +153,35 @@
     width: 90vw;
     border-bottom: 2px solid white;
 }
+
+/* RESPONSIVENESS MOBILE */ 
+@media (max-width: 600px) {
+    .footer {
+        margin: 0vh auto 1vh;
+        width: 100%;
+    }
+
+    .footer-header {
+        font-size: 1.3rem;
+    }
+
+    .logos-container h3 {
+        font-size: 1.1rem;
+    }
+  
+    .block {
+        margin: 30vh auto 5vh auto;
+        width: 90%;
+        border-bottom: 2px solid white;
+    }
+
+    .submit {
+        padding: 15px 20px;
+        font-size: .9rem;
+        width: 30%;
+    }
+    
+    .top {
+        width: 60%;
+    }
+};
