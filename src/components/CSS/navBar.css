@@ -19,6 +19,12 @@
     margin-right: 5vw;
 }
 
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+
 #nav-bar a {
     margin: 0 15px;
     text-decoration: none; 
@@ -74,4 +80,14 @@
 
 #nav-bar button:hover {
     color: white;
+}
+
+
+/* RESPONSIVENESS MOBILE */ 
+@media (max-width: 600px) {
+}
+
+
+ /* RESPONSIVENESS TABLET */
+@media (max-width: 768px) {
 }

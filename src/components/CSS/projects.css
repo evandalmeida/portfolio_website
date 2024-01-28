@@ -148,3 +148,118 @@
 .desc-title a, .desc-title-phone a {
     text-decoration: none;
 }
+
+
+
+/* RESPONSIVENESS MOBILE */ 
+@media (max-width: 600px) {
+    .showcase {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 12vh;
+    }
+
+    .HHMDP img, .MVP img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .demo-cont {
+        border-radius: 20px;
+        padding: 1.5em;
+    }
+
+    .BTP h1, .HHMDP h1, .MVP h1 {
+        font-size: 2rem;
+    }
+
+    .HHMDP p {
+        margin-bottom: 10vh;
+    }
+
+    .github-button {
+        background-color: black;
+        color: white;
+        padding: 12px 1px 10px 3px;
+        border: 3px solid #ddd;
+        border-radius: 10px;
+        margin: 2vh 0 1vh;
+        cursor: pointer;
+        width: 20vw;
+        letter-spacing: 3px;
+        font-size: 1rem;
+
+    }
+
+    .desc-title {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .BTP {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    
+    .BTP video {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .BTP .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        width: 100%;
+    }
+    
+    .BTP p {
+        text-align: left;
+    }
+    
+
+    .desc-title-phone {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1vw;
+        width: 100%;
+    }
+
+
+    .showcase-projects {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 3vh;
+    }
+
+
+    .projects-header {
+        font-size: 2.5rem;
+        letter-spacing: -1px;
+        margin-bottom: 1vh;
+        text-align: center;
+    }
+
+    #projects-cont {
+        gap: 1vh;
+    }
+
+}
+
+
+ /* RESPONSIVENESS TABLET */
+@media (max-width: 768px) {
+}
