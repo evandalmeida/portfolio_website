@@ -31,6 +31,7 @@ export default function Footer ({scrollToTop}) {
     return (
         <div className='footer-cont'>
             <div className='block'></div>
+            <MsgModal show={show} onHide={() => setShow(false)} /> 
             <div className="footer">
                 <div id='footer-main-div' className="form-container">
                     <h2 className="footer-header">SEND ME AN EMAIL TO GET IN TOUCH</h2>
@@ -51,7 +52,6 @@ export default function Footer ({scrollToTop}) {
                     </div>
                 </div>
             </div>
-                <MsgModal show={show} onHide={() => setShow(false)} /> 
             <button className='top' onClick={scrollToTop}> BACK TO THE TOP </button>
         </div>
     );

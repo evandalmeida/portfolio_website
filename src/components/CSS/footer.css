@@ -154,6 +154,13 @@
     border-bottom: 2px solid white;
 }
 
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2vh;
+}
+
 /* RESPONSIVENESS MOBILE */ 
 @media (max-width: 600px) {
     .footer {
