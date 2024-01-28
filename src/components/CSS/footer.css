@@ -127,8 +127,6 @@
     font-size: 14px;
 }
 
-
-
 .footer-cont {
     display: flex;
     flex-direction: column;
@@ -159,6 +157,12 @@
     flex-direction: column;
     text-align: center;
     gap: 2vh;
+    width: 30vw;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 5vh auto 10vh;
+    font-family: 'Typeface', sans-serif;
+    padding: 2rem;
 }
 
 /* RESPONSIVENESS MOBILE */ 
