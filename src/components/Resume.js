@@ -15,7 +15,7 @@ export default function Resume() {
                 <img className="resume-image" src={my_resume} alt="Resume" />
             </div>
             <div className='resume-end-text'>
-                <h2 className='resume-ty'>Thank you for taking a look at my resume. Don't heastiate to reach out if you have any questions.</h2>
+                <h2 className='resume-ty'>Thank you for taking a look at my resume. Don't hesitate to reach out if you have any questions.</h2>
                 <a className='download-button' href={resume} download="Evan D'Alemida's Resume">
                     <img className='download-img' src={download} alt="download" />
                     <h2 className="resume-download">Click Here to Download</h2>
