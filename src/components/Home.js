@@ -42,7 +42,7 @@ export default function Home() {
                 };
                 setIsDeleting(true);
                 setSpeed(100);
-            }, 1000); // wait so the user can read the intro 
+            }, 5000); // wait so the user can read the intro 
         } else if (isDeleting && displayText === '') {
             setIsDeleting(false);
             setLoop(loop + 1);
