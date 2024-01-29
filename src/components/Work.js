@@ -34,7 +34,7 @@ export default function Work() {
                 </div>
                 <div className='job-title'>
                     <div className='job-header'>
-                        <h2 className='name'>Founder/Vice Preseident</h2>
+                        <h2 className='name'>Founder/Vice President</h2>
                         <h2 className='bar'>|</h2>
                         <h2 className='location'>Beta Chi Theta Faternity </h2>
                     </div>
