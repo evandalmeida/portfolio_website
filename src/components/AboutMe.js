@@ -1,6 +1,6 @@
 import './CSS/aboutMe.css'
 
-import pictureOfMe from '../assets/linkedin.jpeg'
+import pictureOfMe from '../assets/linkedin.jpg'
 import TechSkills from './TechSkills'
 import Hobbies from './Hobbies'
 import Education from './Education'
