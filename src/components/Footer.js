@@ -36,7 +36,7 @@ export default function Footer ({scrollToTop}) {
                 <div id='footer-main-div' className="form-container">
                     <h2 className="footer-header">SEND ME AN EMAIL TO GET IN TOUCH</h2>
                     <form className="form"ref={form} onSubmit={sendEmail}>
-                        <input type="text" name="user_name" placeholder="Plese enter your name" />
+                        <input type="text" name="user_name" placeholder="Please enter your name" />
                         <input type="email" name="user_email" placeholder="Please enter your email"/>
                         <textarea name="message"placeholder="Write your email here :)"/>
                         <input className='submit' type="submit" value="SEND" />
