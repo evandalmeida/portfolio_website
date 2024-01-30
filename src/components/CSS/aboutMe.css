@@ -410,8 +410,8 @@
 
 .button-p {
     transform: rotate(-45deg);
-    height: 1.6rem;
-    width: 1.6rem;
+    height: 3rem;
+    width: 3rem;
     background-color: rgba(0, 0, 0, 0.0000001);
     border: none;
     border-top: 1px solid white;
@@ -421,8 +421,8 @@
 
 .button-n {
     transform: rotate(45deg);
-    height: 1.6rem;
-    width: 1.6rem;
+    height: 3rem;
+    width: 3rem;
     background-color: rgba(0, 0, 0, 0.0000001);
     border: none;
     border-top: 1px solid white;
