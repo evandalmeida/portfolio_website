@@ -8,8 +8,6 @@ import AboutMe from './components/AboutMe'
 import Resume from './components/Resume'
 import Footer from './components/Footer'
 
-
-
 export default function App() {
 
   const scrollToTop = () => {
