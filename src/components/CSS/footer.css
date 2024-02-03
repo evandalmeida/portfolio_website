@@ -32,6 +32,7 @@
     flex-direction: column;
     align-items: center;
     gap: 25px;
+
 }
 
 .form input[type="text"],  .form input[type="placeholder"], .form input[type="email"] {
@@ -43,6 +44,7 @@
     color: white;
     font-weight: bolder;
     font-family: 'Typeface', sans-serif;
+    font-size: .55em;
 }
 
 .form textarea {
@@ -54,7 +56,7 @@
     background-color: black;
     color: white;
     font-weight: bolder;
-    font-size: small;
+    font-size: .6em;
     font-family: 'Typeface', sans-serif;
 }
 
