@@ -14,7 +14,7 @@ export default function Work() {
                         <h2 className='bar'>|</h2>
                         <h2 className='location'>Emergency Department</h2>
                     </div>
-                    <h3>11/2021 - 5/2023</h3>
+                    <h3>11/2021 - Present</h3>
                 </div>
                 <div className='job-title'>
                     <div className='job-header'>
